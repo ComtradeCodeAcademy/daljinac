@@ -13,6 +13,7 @@
 		07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D68420C1C71400C2678C /* Daljinac.xcdatamodeld */; };
 		07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68720C1C71600C2678C /* Assets.xcassets */; };
 		07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */; };
+		07E6D69320C1C9C800C2678C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D69220C1C9C800C2678C /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		07E6D68720C1C71600C2678C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E6D68A20C1C71600C2678C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E6D68C20C1C71600C2678C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E6D69220C1C9C800C2678C /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = controllers/RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				07E6D67D20C1C71400C2678C /* AppDelegate.swift */,
 				07E6D67F20C1C71400C2678C /* ViewController.swift */,
+				07E6D69220C1C9C800C2678C /* RegistrationViewController.swift */,
 				07E6D68120C1C71400C2678C /* Main.storyboard */,
 				07E6D68720C1C71600C2678C /* Assets.xcassets */,
 				07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */,
 				07E6D68020C1C71400C2678C /* ViewController.swift in Sources */,
+				07E6D69320C1C9C800C2678C /* RegistrationViewController.swift in Sources */,
 				07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
