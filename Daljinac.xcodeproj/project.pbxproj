@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071E353E20CEE8A40028BC70 /* CardPayScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E353C20CEE8A40028BC70 /* CardPayScreenVC.swift */; };
+		071E353F20CEE8A40028BC70 /* CardPayScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071E353D20CEE8A40028BC70 /* CardPayScreenVC.xib */; };
 		07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D67D20C1C71400C2678C /* AppDelegate.swift */; };
 		07E6D68020C1C71400C2678C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D67F20C1C71400C2678C /* ViewController.swift */; };
 		07E6D68320C1C71400C2678C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68120C1C71400C2678C /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		071E353C20CEE8A40028BC70 /* CardPayScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayScreenVC.swift; sourceTree = "<group>"; };
+		071E353D20CEE8A40028BC70 /* CardPayScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardPayScreenVC.xib; sourceTree = "<group>"; };
 		07E6D67A20C1C71400C2678C /* Daljinac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daljinac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E6D67D20C1C71400C2678C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07E6D67F20C1C71400C2678C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071E354020CEE8B30028BC70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				071E353C20CEE8A40028BC70 /* CardPayScreenVC.swift */,
+				071E353D20CEE8A40028BC70 /* CardPayScreenVC.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		07E6D67120C1C71400C2678C = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +71,7 @@
 			children = (
 				07E6D67D20C1C71400C2678C /* AppDelegate.swift */,
 				07E6D67F20C1C71400C2678C /* ViewController.swift */,
+				071E354020CEE8B30028BC70 /* Controllers */,
 				07E6D68120C1C71400C2678C /* Main.storyboard */,
 				07E6D68720C1C71600C2678C /* Assets.xcassets */,
 				07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */,
@@ -126,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */,
+				071E353F20CEE8A40028BC70 /* CardPayScreenVC.xib in Resources */,
 				07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */,
 				07E6D68320C1C71400C2678C /* Main.storyboard in Resources */,
 			);
@@ -139,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */,
+				071E353E20CEE8A40028BC70 /* CardPayScreenVC.swift in Sources */,
 				07E6D68020C1C71400C2678C /* ViewController.swift in Sources */,
 				07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */,
 			);
