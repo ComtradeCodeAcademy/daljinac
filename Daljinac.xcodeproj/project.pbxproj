@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D67D20C1C71400C2678C /* AppDelegate.swift */; };
-		07E6D68020C1C71400C2678C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D67F20C1C71400C2678C /* ViewController.swift */; };
 		07E6D68320C1C71400C2678C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68120C1C71400C2678C /* Main.storyboard */; };
 		07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D68420C1C71400C2678C /* Daljinac.xcdatamodeld */; };
 		07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68720C1C71600C2678C /* Assets.xcassets */; };
 		07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */; };
+		1D3FA7FE20D05E96002518B1 /* ContactScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3FA7FC20D05E96002518B1 /* ContactScreenVC.swift */; };
+		1D3FA7FF20D05E96002518B1 /* ContactScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FA7FD20D05E96002518B1 /* ContactScreenVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07E6D67A20C1C71400C2678C /* Daljinac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daljinac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E6D67D20C1C71400C2678C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07E6D67F20C1C71400C2678C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07E6D68220C1C71400C2678C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07E6D68520C1C71400C2678C /* Daljinac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daljinac.xcdatamodel; sourceTree = "<group>"; };
 		07E6D68720C1C71600C2678C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E6D68A20C1C71600C2678C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E6D68C20C1C71600C2678C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D3FA7FC20D05E96002518B1 /* ContactScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactScreenVC.swift; sourceTree = "<group>"; };
+		1D3FA7FD20D05E96002518B1 /* ContactScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactScreenVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				07E6D67D20C1C71400C2678C /* AppDelegate.swift */,
-				07E6D67F20C1C71400C2678C /* ViewController.swift */,
+				1D3FA80020D05EA5002518B1 /* Controllers */,
 				07E6D68120C1C71400C2678C /* Main.storyboard */,
 				07E6D68720C1C71600C2678C /* Assets.xcassets */,
 				07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */,
@@ -65,6 +67,15 @@
 				07E6D68420C1C71400C2678C /* Daljinac.xcdatamodeld */,
 			);
 			path = Daljinac;
+			sourceTree = "<group>";
+		};
+		1D3FA80020D05EA5002518B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D3FA7FC20D05E96002518B1 /* ContactScreenVC.swift */,
+				1D3FA7FD20D05E96002518B1 /* ContactScreenVC.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */,
+				1D3FA7FF20D05E96002518B1 /* ContactScreenVC.xib in Resources */,
 				07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */,
 				07E6D68320C1C71400C2678C /* Main.storyboard in Resources */,
 			);
@@ -139,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */,
-				07E6D68020C1C71400C2678C /* ViewController.swift in Sources */,
+				1D3FA7FE20D05E96002518B1 /* ContactScreenVC.swift in Sources */,
 				07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
