@@ -35,6 +35,18 @@
 		0E99EDEA20DA9DD80067618F /* CreditCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDE920DA9DD80067618F /* CreditCardView.xib */; };
 		0E99EDEC20DA9E010067618F /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDEB20DA9E010067618F /* CreditCardViewController.swift */; };
 		0E99EDEE20DA9E200067618F /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDED20DA9E200067618F /* CreditCardView.swift */; };
+		0E99EDF020DA9E5A0067618F /* UserProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDEF20DA9E5A0067618F /* UserProfileView.xib */; };
+		0E99EDF220DA9E740067618F /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDF120DA9E740067618F /* UserProfileView.swift */; };
+		0E99EDF420DA9E8A0067618F /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDF320DA9E8A0067618F /* UserProfileViewController.swift */; };
+		0E99EDF620DA9EB00067618F /* ChannelsAndCategoriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDF520DA9EB00067618F /* ChannelsAndCategoriesView.xib */; };
+		0E99EDF820DA9EC70067618F /* ChannelsAndCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDF720DA9EC70067618F /* ChannelsAndCategoriesViewController.swift */; };
+		0E99EDFA20DA9EE80067618F /* ChannelsAndCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDF920DA9EE80067618F /* ChannelsAndCategoriesView.swift */; };
+		0E99EDFC20DA9F050067618F /* ChannelListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDFB20DA9F050067618F /* ChannelListView.xib */; };
+		0E99EDFE20DA9F1B0067618F /* ChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDFD20DA9F1B0067618F /* ChannelListView.swift */; };
+		0E99EE0020DA9F320067618F /* ChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDFF20DA9F320067618F /* ChannelListViewController.swift */; };
+		0E99EE0220DA9F4A0067618F /* CategoriesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EE0120DA9F4A0067618F /* CategoriesListView.xib */; };
+		0E99EE0420DA9F5D0067618F /* CategoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EE0320DA9F5D0067618F /* CategoriesListViewController.swift */; };
+		0E99EE0620DA9F830067618F /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EE0520DA9F830067618F /* CategoriesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +80,18 @@
 		0E99EDE920DA9DD80067618F /* CreditCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardView.xib; sourceTree = "<group>"; };
 		0E99EDEB20DA9E010067618F /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
 		0E99EDED20DA9E200067618F /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		0E99EDEF20DA9E5A0067618F /* UserProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileView.xib; sourceTree = "<group>"; };
+		0E99EDF120DA9E740067618F /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		0E99EDF320DA9E8A0067618F /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		0E99EDF520DA9EB00067618F /* ChannelsAndCategoriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelsAndCategoriesView.xib; sourceTree = "<group>"; };
+		0E99EDF720DA9EC70067618F /* ChannelsAndCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsAndCategoriesViewController.swift; sourceTree = "<group>"; };
+		0E99EDF920DA9EE80067618F /* ChannelsAndCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsAndCategoriesView.swift; sourceTree = "<group>"; };
+		0E99EDFB20DA9F050067618F /* ChannelListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelListView.xib; sourceTree = "<group>"; };
+		0E99EDFD20DA9F1B0067618F /* ChannelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListView.swift; sourceTree = "<group>"; };
+		0E99EDFF20DA9F320067618F /* ChannelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListViewController.swift; sourceTree = "<group>"; };
+		0E99EE0120DA9F4A0067618F /* CategoriesListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesListView.xib; sourceTree = "<group>"; };
+		0E99EE0320DA9F5D0067618F /* CategoriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListViewController.swift; sourceTree = "<group>"; };
+		0E99EE0520DA9F830067618F /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +227,10 @@
 				0E99EDE120DA9D480067618F /* PaymentView.swift */,
 				0E99EDE720DA9DB20067618F /* ChooseTypeView.swift */,
 				0E99EDED20DA9E200067618F /* CreditCardView.swift */,
+				0E99EDF120DA9E740067618F /* UserProfileView.swift */,
+				0E99EDF920DA9EE80067618F /* ChannelsAndCategoriesView.swift */,
+				0E99EDFD20DA9F1B0067618F /* ChannelListView.swift */,
+				0E99EE0520DA9F830067618F /* CategoriesListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +246,10 @@
 				0E99EDDF20DA9D240067618F /* PaymentViewController.swift */,
 				0E99EDE520DA9D900067618F /* ChooseTypeViewController.swift */,
 				0E99EDEB20DA9E010067618F /* CreditCardViewController.swift */,
+				0E99EDF320DA9E8A0067618F /* UserProfileViewController.swift */,
+				0E99EDF720DA9EC70067618F /* ChannelsAndCategoriesViewController.swift */,
+				0E99EDFF20DA9F320067618F /* ChannelListViewController.swift */,
+				0E99EE0320DA9F5D0067618F /* CategoriesListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +265,10 @@
 				0E99EDDD20DA9D130067618F /* PaymentView.xib */,
 				0E99EDE320DA9D650067618F /* ChooseTypeView.xib */,
 				0E99EDE920DA9DD80067618F /* CreditCardView.xib */,
+				0E99EDEF20DA9E5A0067618F /* UserProfileView.xib */,
+				0E99EDF520DA9EB00067618F /* ChannelsAndCategoriesView.xib */,
+				0E99EDFB20DA9F050067618F /* ChannelListView.xib */,
+				0E99EE0120DA9F4A0067618F /* CategoriesListView.xib */,
 			);
 			path = "XIB files";
 			sourceTree = "<group>";
@@ -295,15 +331,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E99EDFC20DA9F050067618F /* ChannelListView.xib in Resources */,
 				0E99EDE420DA9D650067618F /* ChooseTypeView.xib in Resources */,
 				0E99EDD820DA9CA30067618F /* SmsCodeView.xib in Resources */,
+				0E99EDF020DA9E5A0067618F /* UserProfileView.xib in Resources */,
 				0E99EDDE20DA9D130067618F /* PaymentView.xib in Resources */,
 				07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */,
 				07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */,
 				0E99EDEA20DA9DD80067618F /* CreditCardView.xib in Resources */,
+				0E99EE0220DA9F4A0067618F /* CategoriesListView.xib in Resources */,
 				0E99EDCE20DA9BCF0067618F /* ForgotPasswordView.xib in Resources */,
 				0E99EDC220DA9AB80067618F /* LoginView.xib in Resources */,
 				0E99EDD220DA9C240067618F /* TermsAndConditionsView.xib in Resources */,
+				0E99EDF620DA9EB00067618F /* ChannelsAndCategoriesView.xib in Resources */,
 				0E99EDC820DA9B440067618F /* RegistrationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,13 +356,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E99EDD020DA9BF00067618F /* ForgotPasswordViewController.swift in Sources */,
+				0E99EDF420DA9E8A0067618F /* UserProfileViewController.swift in Sources */,
 				0E99EDE620DA9D900067618F /* ChooseTypeViewController.swift in Sources */,
 				0E99EDE020DA9D240067618F /* PaymentViewController.swift in Sources */,
+				0E99EE0620DA9F830067618F /* CategoriesListView.swift in Sources */,
 				0E99EDEC20DA9E010067618F /* CreditCardViewController.swift in Sources */,
 				0E99EDD420DA9C560067618F /* Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift in Sources */,
+				0E99EE0020DA9F320067618F /* ChannelListViewController.swift in Sources */,
+				0E99EDF220DA9E740067618F /* UserProfileView.swift in Sources */,
 				0E99EDEE20DA9E200067618F /* CreditCardView.swift in Sources */,
 				0E99EDE220DA9D480067618F /* PaymentView.swift in Sources */,
 				0E99EDC420DA9AF60067618F /* LoginViewController.swift in Sources */,
+				0E99EDFA20DA9EE80067618F /* ChannelsAndCategoriesView.swift in Sources */,
 				0E99EDCC20DA9BBA0067618F /* ForgotPasswordView.swift in Sources */,
 				0E99EDD620DA9C7D0067618F /* TermsAndConditionsView.swift in Sources */,
 				0E99EDC020DA9A850067618F /* LoginView.swift in Sources */,
@@ -331,7 +376,10 @@
 				0E99EDCA20DA9B750067618F /* RegistrationView.swift in Sources */,
 				0E99EDDC20DA9CF00067618F /* SmsCodeView.swift in Sources */,
 				0E99EDE820DA9DB20067618F /* ChooseTypeView.swift in Sources */,
+				0E99EE0420DA9F5D0067618F /* CategoriesListViewController.swift in Sources */,
+				0E99EDF820DA9EC70067618F /* ChannelsAndCategoriesViewController.swift in Sources */,
 				07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */,
+				0E99EDFE20DA9F1B0067618F /* ChannelListView.swift in Sources */,
 				0E99EDC620DA9B280067618F /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
