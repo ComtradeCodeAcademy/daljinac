@@ -53,12 +53,108 @@
 			isa = PBXGroup;
 			children = (
 				07E6D67D20C1C71400C2678C /* AppDelegate.swift */,
-				07E6D68720C1C71600C2678C /* Assets.xcassets */,
+				0E99EDB120DA95690067618F /* Scenes */,
+				0E99EDB320DA95900067618F /* Services */,
+				0E99EDB220DA95750067618F /* Utilities */,
 				07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */,
+				07E6D68720C1C71600C2678C /* Assets.xcassets */,
 				07E6D68C20C1C71600C2678C /* Info.plist */,
 				07E6D68420C1C71400C2678C /* Daljinac.xcdatamodeld */,
 			);
 			path = Daljinac;
+			sourceTree = "<group>";
+		};
+		0E99EDB120DA95690067618F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDBD20DA99030067618F /* Controllers */,
+				0E99EDBC20DA98E40067618F /* View */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0E99EDB220DA95750067618F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDB520DA962E0067618F /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0E99EDB320DA95900067618F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDBB20DA981D0067618F /* Utility services */,
+				0E99EDBA20DA97BD0067618F /* Analytics service */,
+				0E99EDB820DA96780067618F /* Persistence service */,
+				0E99EDB920DA97930067618F /* Netwirking services */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0E99EDB420DA95CC0067618F /* ApiServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApiServices;
+			sourceTree = "<group>";
+		};
+		0E99EDB520DA962E0067618F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E99EDB720DA96680067618F /* VideoServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoServices;
+			sourceTree = "<group>";
+		};
+		0E99EDB820DA96780067618F /* Persistence service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Persistence service";
+			sourceTree = "<group>";
+		};
+		0E99EDB920DA97930067618F /* Netwirking services */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDB720DA96680067618F /* VideoServices */,
+				0E99EDB420DA95CC0067618F /* ApiServices */,
+			);
+			path = "Netwirking services";
+			sourceTree = "<group>";
+		};
+		0E99EDBA20DA97BD0067618F /* Analytics service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Analytics service";
+			sourceTree = "<group>";
+		};
+		0E99EDBB20DA981D0067618F /* Utility services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Utility services";
+			sourceTree = "<group>";
+		};
+		0E99EDBC20DA98E40067618F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E99EDBD20DA99030067618F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
