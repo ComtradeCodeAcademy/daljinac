@@ -11,6 +11,30 @@
 		07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D68420C1C71400C2678C /* Daljinac.xcdatamodeld */; };
 		07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68720C1C71600C2678C /* Assets.xcassets */; };
 		07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */; };
+		0E99EDC020DA9A850067618F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDBF20DA9A850067618F /* LoginView.swift */; };
+		0E99EDC220DA9AB80067618F /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDC120DA9AB80067618F /* LoginView.xib */; };
+		0E99EDC420DA9AF60067618F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDC320DA9AF60067618F /* LoginViewController.swift */; };
+		0E99EDC620DA9B280067618F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDC520DA9B280067618F /* RegistrationViewController.swift */; };
+		0E99EDC820DA9B440067618F /* RegistrationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDC720DA9B440067618F /* RegistrationView.xib */; };
+		0E99EDCA20DA9B750067618F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDC920DA9B750067618F /* RegistrationView.swift */; };
+		0E99EDCC20DA9BBA0067618F /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDCB20DA9BBA0067618F /* ForgotPasswordView.swift */; };
+		0E99EDCE20DA9BCF0067618F /* ForgotPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDCD20DA9BCF0067618F /* ForgotPasswordView.xib */; };
+		0E99EDD020DA9BF00067618F /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDCF20DA9BF00067618F /* ForgotPasswordViewController.swift */; };
+		0E99EDD220DA9C240067618F /* TermsAndConditionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDD120DA9C240067618F /* TermsAndConditionsView.xib */; };
+		0E99EDD420DA9C560067618F /* Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDD320DA9C560067618F /* Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift */; };
+		0E99EDD620DA9C7D0067618F /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDD520DA9C7D0067618F /* TermsAndConditionsView.swift */; };
+		0E99EDD820DA9CA30067618F /* SmsCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDD720DA9CA30067618F /* SmsCodeView.xib */; };
+		0E99EDDA20DA9CCD0067618F /* SmsCodeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDD920DA9CCD0067618F /* SmsCodeViewViewController.swift */; };
+		0E99EDDC20DA9CF00067618F /* SmsCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDDB20DA9CF00067618F /* SmsCodeView.swift */; };
+		0E99EDDE20DA9D130067618F /* PaymentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDDD20DA9D130067618F /* PaymentView.xib */; };
+		0E99EDE020DA9D240067618F /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDDF20DA9D240067618F /* PaymentViewController.swift */; };
+		0E99EDE220DA9D480067618F /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDE120DA9D480067618F /* PaymentView.swift */; };
+		0E99EDE420DA9D650067618F /* ChooseTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDE320DA9D650067618F /* ChooseTypeView.xib */; };
+		0E99EDE620DA9D900067618F /* ChooseTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDE520DA9D900067618F /* ChooseTypeViewController.swift */; };
+		0E99EDE820DA9DB20067618F /* ChooseTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDE720DA9DB20067618F /* ChooseTypeView.swift */; };
+		0E99EDEA20DA9DD80067618F /* CreditCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDE920DA9DD80067618F /* CreditCardView.xib */; };
+		0E99EDEC20DA9E010067618F /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDEB20DA9E010067618F /* CreditCardViewController.swift */; };
+		0E99EDEE20DA9E200067618F /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDED20DA9E200067618F /* CreditCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +44,30 @@
 		07E6D68720C1C71600C2678C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E6D68A20C1C71600C2678C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E6D68C20C1C71600C2678C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E99EDBF20DA9A850067618F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0E99EDC120DA9AB80067618F /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		0E99EDC320DA9AF60067618F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0E99EDC520DA9B280067618F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		0E99EDC720DA9B440067618F /* RegistrationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationView.xib; sourceTree = "<group>"; };
+		0E99EDC920DA9B750067618F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		0E99EDCB20DA9BBA0067618F /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		0E99EDCD20DA9BCF0067618F /* ForgotPasswordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordView.xib; sourceTree = "<group>"; };
+		0E99EDCF20DA9BF00067618F /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		0E99EDD120DA9C240067618F /* TermsAndConditionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsView.xib; sourceTree = "<group>"; };
+		0E99EDD320DA9C560067618F /* Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift"; sourceTree = "<group>"; };
+		0E99EDD520DA9C7D0067618F /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
+		0E99EDD720DA9CA30067618F /* SmsCodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmsCodeView.xib; sourceTree = "<group>"; };
+		0E99EDD920DA9CCD0067618F /* SmsCodeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsCodeViewViewController.swift; sourceTree = "<group>"; };
+		0E99EDDB20DA9CF00067618F /* SmsCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsCodeView.swift; sourceTree = "<group>"; };
+		0E99EDDD20DA9D130067618F /* PaymentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentView.xib; sourceTree = "<group>"; };
+		0E99EDDF20DA9D240067618F /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		0E99EDE120DA9D480067618F /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		0E99EDE320DA9D650067618F /* ChooseTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseTypeView.xib; sourceTree = "<group>"; };
+		0E99EDE520DA9D900067618F /* ChooseTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTypeViewController.swift; sourceTree = "<group>"; };
+		0E99EDE720DA9DB20067618F /* ChooseTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTypeView.swift; sourceTree = "<group>"; };
+		0E99EDE920DA9DD80067618F /* CreditCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardView.xib; sourceTree = "<group>"; };
+		0E99EDEB20DA9E010067618F /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		0E99EDED20DA9E200067618F /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +115,7 @@
 		0E99EDB120DA95690067618F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0E99EDBE20DA99AF0067618F /* XIB files */,
 				0E99EDBD20DA99030067618F /* Controllers */,
 				0E99EDBC20DA98E40067618F /* View */,
 			);
@@ -146,6 +195,14 @@
 		0E99EDBC20DA98E40067618F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E99EDBF20DA9A850067618F /* LoginView.swift */,
+				0E99EDC920DA9B750067618F /* RegistrationView.swift */,
+				0E99EDCB20DA9BBA0067618F /* ForgotPasswordView.swift */,
+				0E99EDD520DA9C7D0067618F /* TermsAndConditionsView.swift */,
+				0E99EDDB20DA9CF00067618F /* SmsCodeView.swift */,
+				0E99EDE120DA9D480067618F /* PaymentView.swift */,
+				0E99EDE720DA9DB20067618F /* ChooseTypeView.swift */,
+				0E99EDED20DA9E200067618F /* CreditCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,8 +210,31 @@
 		0E99EDBD20DA99030067618F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0E99EDC320DA9AF60067618F /* LoginViewController.swift */,
+				0E99EDC520DA9B280067618F /* RegistrationViewController.swift */,
+				0E99EDCF20DA9BF00067618F /* ForgotPasswordViewController.swift */,
+				0E99EDD320DA9C560067618F /* Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift */,
+				0E99EDD920DA9CCD0067618F /* SmsCodeViewViewController.swift */,
+				0E99EDDF20DA9D240067618F /* PaymentViewController.swift */,
+				0E99EDE520DA9D900067618F /* ChooseTypeViewController.swift */,
+				0E99EDEB20DA9E010067618F /* CreditCardViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0E99EDBE20DA99AF0067618F /* XIB files */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDC120DA9AB80067618F /* LoginView.xib */,
+				0E99EDC720DA9B440067618F /* RegistrationView.xib */,
+				0E99EDCD20DA9BCF0067618F /* ForgotPasswordView.xib */,
+				0E99EDD120DA9C240067618F /* TermsAndConditionsView.xib */,
+				0E99EDD720DA9CA30067618F /* SmsCodeView.xib */,
+				0E99EDDD20DA9D130067618F /* PaymentView.xib */,
+				0E99EDE320DA9D650067618F /* ChooseTypeView.xib */,
+				0E99EDE920DA9DD80067618F /* CreditCardView.xib */,
+			);
+			path = "XIB files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +295,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E99EDE420DA9D650067618F /* ChooseTypeView.xib in Resources */,
+				0E99EDD820DA9CA30067618F /* SmsCodeView.xib in Resources */,
+				0E99EDDE20DA9D130067618F /* PaymentView.xib in Resources */,
 				07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */,
 				07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */,
+				0E99EDEA20DA9DD80067618F /* CreditCardView.xib in Resources */,
+				0E99EDCE20DA9BCF0067618F /* ForgotPasswordView.xib in Resources */,
+				0E99EDC220DA9AB80067618F /* LoginView.xib in Resources */,
+				0E99EDD220DA9C240067618F /* TermsAndConditionsView.xib in Resources */,
+				0E99EDC820DA9B440067618F /* RegistrationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,8 +315,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E99EDD020DA9BF00067618F /* ForgotPasswordViewController.swift in Sources */,
+				0E99EDE620DA9D900067618F /* ChooseTypeViewController.swift in Sources */,
+				0E99EDE020DA9D240067618F /* PaymentViewController.swift in Sources */,
+				0E99EDEC20DA9E010067618F /* CreditCardViewController.swift in Sources */,
+				0E99EDD420DA9C560067618F /* Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift in Sources */,
+				0E99EDEE20DA9E200067618F /* CreditCardView.swift in Sources */,
+				0E99EDE220DA9D480067618F /* PaymentView.swift in Sources */,
+				0E99EDC420DA9AF60067618F /* LoginViewController.swift in Sources */,
+				0E99EDCC20DA9BBA0067618F /* ForgotPasswordView.swift in Sources */,
+				0E99EDD620DA9C7D0067618F /* TermsAndConditionsView.swift in Sources */,
+				0E99EDC020DA9A850067618F /* LoginView.swift in Sources */,
 				07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */,
+				0E99EDDA20DA9CCD0067618F /* SmsCodeViewViewController.swift in Sources */,
+				0E99EDCA20DA9B750067618F /* RegistrationView.swift in Sources */,
+				0E99EDDC20DA9CF00067618F /* SmsCodeView.swift in Sources */,
+				0E99EDE820DA9DB20067618F /* ChooseTypeView.swift in Sources */,
 				07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */,
+				0E99EDC620DA9B280067618F /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
