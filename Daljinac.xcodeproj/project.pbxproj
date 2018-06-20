@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D67D20C1C71400C2678C /* AppDelegate.swift */; };
-		07E6D68020C1C71400C2678C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D67F20C1C71400C2678C /* ViewController.swift */; };
-		07E6D68320C1C71400C2678C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68120C1C71400C2678C /* Main.storyboard */; };
 		07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D68420C1C71400C2678C /* Daljinac.xcdatamodeld */; };
 		07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68720C1C71600C2678C /* Assets.xcassets */; };
 		07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */; };
@@ -18,8 +16,6 @@
 /* Begin PBXFileReference section */
 		07E6D67A20C1C71400C2678C /* Daljinac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daljinac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E6D67D20C1C71400C2678C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07E6D67F20C1C71400C2678C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07E6D68220C1C71400C2678C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07E6D68520C1C71400C2678C /* Daljinac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daljinac.xcdatamodel; sourceTree = "<group>"; };
 		07E6D68720C1C71600C2678C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E6D68A20C1C71600C2678C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				07E6D67D20C1C71400C2678C /* AppDelegate.swift */,
-				07E6D67F20C1C71400C2678C /* ViewController.swift */,
-				07E6D68120C1C71400C2678C /* Main.storyboard */,
 				07E6D68720C1C71600C2678C /* Assets.xcassets */,
 				07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */,
 				07E6D68C20C1C71600C2678C /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */,
 				07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */,
-				07E6D68320C1C71400C2678C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +132,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */,
-				07E6D68020C1C71400C2678C /* ViewController.swift in Sources */,
 				07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +139,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		07E6D68120C1C71400C2678C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07E6D68220C1C71400C2678C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
