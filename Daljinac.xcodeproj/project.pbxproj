@@ -139,8 +139,20 @@
 		0E99EDB120DA95690067618F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0EA67BBD20DBFA440027296D /* CategoriesList Scene */,
+				0EA67BBC20DBFA080027296D /* Channel List Scene */,
+				0EA67BBB20DBF9D80027296D /* ChannelsAndCategories Scene */,
+				0EA67BBA20DBF9AF0027296D /* User Profile */,
+				0EA67BB920DBF98C0027296D /* Credit Card Scene */,
+				0EA67BB820DBF94E0027296D /* Choose Type Scene */,
+				0EA67BB720DBF90C0027296D /* Payment Scene */,
+				0EA67BB620DBF8D70027296D /* SmsCode Scene */,
+				0EA67BB520DBF8AD0027296D /* TermsAndConditions */,
+				0EA67BB420DBF83D0027296D /* ForgotPassword Scene */,
+				0EA67BB320DBF8090027296D /* Registration Scene */,
+				0EA67BB220DBF7C50027296D /* Login Scene */,
 				0E99EDBE20DA99AF0067618F /* XIB files */,
-				0E99EDBD20DA99030067618F /* Controllers */,
+				0E99EDBD20DA99030067618F /* Storyboards */,
 				0E99EDBC20DA98E40067618F /* View */,
 			);
 			path = Scenes;
@@ -219,58 +231,142 @@
 		0E99EDBC20DA98E40067618F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0E99EDBF20DA9A850067618F /* LoginView.swift */,
-				0E99EDC920DA9B750067618F /* RegistrationView.swift */,
-				0E99EDCB20DA9BBA0067618F /* ForgotPasswordView.swift */,
-				0E99EDD520DA9C7D0067618F /* TermsAndConditionsView.swift */,
-				0E99EDDB20DA9CF00067618F /* SmsCodeView.swift */,
-				0E99EDE120DA9D480067618F /* PaymentView.swift */,
-				0E99EDE720DA9DB20067618F /* ChooseTypeView.swift */,
-				0E99EDED20DA9E200067618F /* CreditCardView.swift */,
-				0E99EDF120DA9E740067618F /* UserProfileView.swift */,
-				0E99EDF920DA9EE80067618F /* ChannelsAndCategoriesView.swift */,
-				0E99EDFD20DA9F1B0067618F /* ChannelListView.swift */,
-				0E99EE0520DA9F830067618F /* CategoriesListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		0E99EDBD20DA99030067618F /* Controllers */ = {
+		0E99EDBD20DA99030067618F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				0E99EDC320DA9AF60067618F /* LoginViewController.swift */,
-				0E99EDC520DA9B280067618F /* RegistrationViewController.swift */,
-				0E99EDCF20DA9BF00067618F /* ForgotPasswordViewController.swift */,
-				0E99EDD320DA9C560067618F /* Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift */,
-				0E99EDD920DA9CCD0067618F /* SmsCodeViewViewController.swift */,
-				0E99EDDF20DA9D240067618F /* PaymentViewController.swift */,
-				0E99EDE520DA9D900067618F /* ChooseTypeViewController.swift */,
-				0E99EDEB20DA9E010067618F /* CreditCardViewController.swift */,
-				0E99EDF320DA9E8A0067618F /* UserProfileViewController.swift */,
-				0E99EDF720DA9EC70067618F /* ChannelsAndCategoriesViewController.swift */,
-				0E99EDFF20DA9F320067618F /* ChannelListViewController.swift */,
-				0E99EE0320DA9F5D0067618F /* CategoriesListViewController.swift */,
 			);
-			path = Controllers;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		0E99EDBE20DA99AF0067618F /* XIB files */ = {
 			isa = PBXGroup;
 			children = (
-				0E99EDC120DA9AB80067618F /* LoginView.xib */,
-				0E99EDC720DA9B440067618F /* RegistrationView.xib */,
-				0E99EDCD20DA9BCF0067618F /* ForgotPasswordView.xib */,
-				0E99EDD120DA9C240067618F /* TermsAndConditionsView.xib */,
-				0E99EDD720DA9CA30067618F /* SmsCodeView.xib */,
-				0E99EDDD20DA9D130067618F /* PaymentView.xib */,
-				0E99EDE320DA9D650067618F /* ChooseTypeView.xib */,
-				0E99EDE920DA9DD80067618F /* CreditCardView.xib */,
-				0E99EDEF20DA9E5A0067618F /* UserProfileView.xib */,
-				0E99EDF520DA9EB00067618F /* ChannelsAndCategoriesView.xib */,
-				0E99EDFB20DA9F050067618F /* ChannelListView.xib */,
-				0E99EE0120DA9F4A0067618F /* CategoriesListView.xib */,
 			);
 			path = "XIB files";
+			sourceTree = "<group>";
+		};
+		0EA67BB220DBF7C50027296D /* Login Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDC120DA9AB80067618F /* LoginView.xib */,
+				0E99EDC320DA9AF60067618F /* LoginViewController.swift */,
+				0E99EDBF20DA9A850067618F /* LoginView.swift */,
+			);
+			path = "Login Scene";
+			sourceTree = "<group>";
+		};
+		0EA67BB320DBF8090027296D /* Registration Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDC720DA9B440067618F /* RegistrationView.xib */,
+				0E99EDC520DA9B280067618F /* RegistrationViewController.swift */,
+				0E99EDC920DA9B750067618F /* RegistrationView.swift */,
+			);
+			path = "Registration Scene";
+			sourceTree = "<group>";
+		};
+		0EA67BB420DBF83D0027296D /* ForgotPassword Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDCD20DA9BCF0067618F /* ForgotPasswordView.xib */,
+				0E99EDCF20DA9BF00067618F /* ForgotPasswordViewController.swift */,
+				0E99EDCB20DA9BBA0067618F /* ForgotPasswordView.swift */,
+			);
+			path = "ForgotPassword Scene";
+			sourceTree = "<group>";
+		};
+		0EA67BB520DBF8AD0027296D /* TermsAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDD120DA9C240067618F /* TermsAndConditionsView.xib */,
+				0E99EDD320DA9C560067618F /* Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift */,
+				0E99EDD520DA9C7D0067618F /* TermsAndConditionsView.swift */,
+			);
+			path = TermsAndConditions;
+			sourceTree = "<group>";
+		};
+		0EA67BB620DBF8D70027296D /* SmsCode Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDD920DA9CCD0067618F /* SmsCodeViewViewController.swift */,
+				0E99EDD720DA9CA30067618F /* SmsCodeView.xib */,
+				0E99EDDB20DA9CF00067618F /* SmsCodeView.swift */,
+			);
+			path = "SmsCode Scene";
+			sourceTree = "<group>";
+		};
+		0EA67BB720DBF90C0027296D /* Payment Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDDD20DA9D130067618F /* PaymentView.xib */,
+				0E99EDDF20DA9D240067618F /* PaymentViewController.swift */,
+				0E99EDE120DA9D480067618F /* PaymentView.swift */,
+			);
+			path = "Payment Scene";
+			sourceTree = "<group>";
+		};
+		0EA67BB820DBF94E0027296D /* Choose Type Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDE520DA9D900067618F /* ChooseTypeViewController.swift */,
+				0E99EDE720DA9DB20067618F /* ChooseTypeView.swift */,
+				0E99EDE320DA9D650067618F /* ChooseTypeView.xib */,
+			);
+			path = "Choose Type Scene";
+			sourceTree = "<group>";
+		};
+		0EA67BB920DBF98C0027296D /* Credit Card Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDE920DA9DD80067618F /* CreditCardView.xib */,
+				0E99EDEB20DA9E010067618F /* CreditCardViewController.swift */,
+				0E99EDED20DA9E200067618F /* CreditCardView.swift */,
+			);
+			path = "Credit Card Scene";
+			sourceTree = "<group>";
+		};
+		0EA67BBA20DBF9AF0027296D /* User Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDEF20DA9E5A0067618F /* UserProfileView.xib */,
+				0E99EDF320DA9E8A0067618F /* UserProfileViewController.swift */,
+				0E99EDF120DA9E740067618F /* UserProfileView.swift */,
+			);
+			path = "User Profile";
+			sourceTree = "<group>";
+		};
+		0EA67BBB20DBF9D80027296D /* ChannelsAndCategories Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDF520DA9EB00067618F /* ChannelsAndCategoriesView.xib */,
+				0E99EDF720DA9EC70067618F /* ChannelsAndCategoriesViewController.swift */,
+				0E99EDF920DA9EE80067618F /* ChannelsAndCategoriesView.swift */,
+			);
+			path = "ChannelsAndCategories Scene";
+			sourceTree = "<group>";
+		};
+		0EA67BBC20DBFA080027296D /* Channel List Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EDFB20DA9F050067618F /* ChannelListView.xib */,
+				0E99EDFF20DA9F320067618F /* ChannelListViewController.swift */,
+				0E99EDFD20DA9F1B0067618F /* ChannelListView.swift */,
+			);
+			path = "Channel List Scene";
+			sourceTree = "<group>";
+		};
+		0EA67BBD20DBFA440027296D /* CategoriesList Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E99EE0320DA9F5D0067618F /* CategoriesListViewController.swift */,
+				0E99EE0520DA9F830067618F /* CategoriesListView.swift */,
+				0E99EE0120DA9F4A0067618F /* CategoriesListView.xib */,
+			);
+			path = "CategoriesList Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
