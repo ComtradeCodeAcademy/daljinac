@@ -47,6 +47,7 @@
 		0E99EE0220DA9F4A0067618F /* CategoriesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EE0120DA9F4A0067618F /* CategoriesListView.xib */; };
 		0E99EE0420DA9F5D0067618F /* CategoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EE0320DA9F5D0067618F /* CategoriesListViewController.swift */; };
 		0E99EE0620DA9F830067618F /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EE0520DA9F830067618F /* CategoriesListView.swift */; };
+		0EF4E08920E59D9B00714A61 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4E08820E59D9B00714A61 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		0E99EE0120DA9F4A0067618F /* CategoriesListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesListView.xib; sourceTree = "<group>"; };
 		0E99EE0320DA9F5D0067618F /* CategoriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListViewController.swift; sourceTree = "<group>"; };
 		0E99EE0520DA9F830067618F /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
+		0EF4E08820E59D9B00714A61 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 		0E99EDB820DA96780067618F /* Persistence service */ = {
 			isa = PBXGroup;
 			children = (
+				0EF4E08820E59D9B00714A61 /* CoreDataStack.swift */,
 			);
 			path = "Persistence service";
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				0E99EDD020DA9BF00067618F /* ForgotPasswordViewController.swift in Sources */,
 				0E99EDF420DA9E8A0067618F /* UserProfileViewController.swift in Sources */,
 				0E99EDE620DA9D900067618F /* ChooseTypeViewController.swift in Sources */,
+				0EF4E08920E59D9B00714A61 /* CoreDataStack.swift in Sources */,
 				0E99EDE020DA9D240067618F /* PaymentViewController.swift in Sources */,
 				0E99EE0620DA9F830067618F /* CategoriesListView.swift in Sources */,
 				0E99EDEC20DA9E010067618F /* CreditCardViewController.swift in Sources */,
