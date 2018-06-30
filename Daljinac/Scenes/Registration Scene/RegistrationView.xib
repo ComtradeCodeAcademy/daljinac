@@ -10,13 +10,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationView" customModule="Daljinac" customModuleProvider="target">
+            <connections>
+                <outlet property="ChanelListButton" destination="Vgd-1Z-1ZU" id="rD9-Be-JRJ"/>
+                <outlet property="aboutUsButton" destination="qmD-97-OrX" id="QBo-h7-lw4"/>
+                <outlet property="daljinacLink" destination="YWH-o7-gBT" id="8CV-mL-OKa"/>
+                <outlet property="daljinacLogo" destination="IBW-ny-Cni" id="rSL-bZ-clF"/>
+                <outlet property="firstNameTextFild" destination="dv0-J9-0se" id="sdS-P0-MGm"/>
+                <outlet property="lastNameTxtFild" destination="hyw-4e-Jdh" id="HFf-d1-ghR"/>
+                <outlet property="passwordTxtFild" destination="zXh-Uv-PKS" id="zjF-BH-96V"/>
+                <outlet property="phoneNumberTxtFild" destination="2Ob-d6-qGb" id="whC-TO-EiR"/>
+                <outlet property="rePasswordTxtFild" destination="Sbk-yr-c7d" id="YVF-iI-FRm"/>
+                <outlet property="registrationButton" destination="DTq-LI-66v" id="Ocz-pz-iYI"/>
+                <outlet property="registrationView" destination="1HV-tu-v4y" id="SCM-Dk-ljO"/>
+                <outlet property="supportButton" destination="Nc2-wk-wp5" id="DvS-M6-NMj"/>
+                <outlet property="telegrafLogo" destination="LTa-2Y-TNp" id="R6C-le-5Sd"/>
+                <outlet property="termsButton" destination="adS-ma-Uyl" id="plX-FH-lm0"/>
+                <outlet property="termsLbl" destination="PWM-o6-q4r" id="GBK-TW-I56"/>
+                <outlet property="titleLable" destination="CWX-oS-8Iw" id="yGO-rB-e7b"/>
+                <outlet property="usingTermsButton" destination="ZUx-71-Frh" id="9vy-zC-YlO"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="1HV-tu-v4y">
+        <view contentMode="scaleToFill" id="1HV-tu-v4y" customClass="RegistrationView" customModule="Daljinac" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRM-CY-Qda" userLabel="topView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRM-CY-Qda" userLabel="topView" customClass="RegistrationView" customModule="Daljinac" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="20" width="375" height="162"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daljinacLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IBW-ny-Cni">
@@ -27,12 +47,6 @@
                                 <constraint firstAttribute="width" constant="110" id="vav-6D-972"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.dajinac.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWH-o7-gBT">
-                            <rect key="frame" x="106" y="139" width="162" height="23"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-2Y-TNp" userLabel="telegraf">
                             <rect key="frame" x="10" y="0.0" width="44" height="44"/>
                             <constraints>
@@ -41,6 +55,12 @@
                             </constraints>
                             <state key="normal" title="Button" image="telegrafLogo"/>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.dajinac.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWH-o7-gBT">
+                            <rect key="frame" x="106" y="139" width="162" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAJVEĆI IZBOR TV KANALA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWX-oS-8Iw">
                             <rect key="frame" x="59" y="116" width="257" height="23"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
@@ -65,7 +85,7 @@
                         <constraint firstItem="YWH-o7-gBT" firstAttribute="centerX" secondItem="pRM-CY-Qda" secondAttribute="centerX" id="z0M-BF-wvb"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6G4-Cx-nfh" userLabel="middleView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6G4-Cx-nfh" userLabel="middleView" customClass="RegistrationView" customModule="Daljinac" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="182" width="375" height="200"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pZZ-u0-ClF">
@@ -112,7 +132,7 @@
                         <constraint firstItem="pZZ-u0-ClF" firstAttribute="leading" secondItem="6G4-Cx-nfh" secondAttribute="leading" constant="50" id="upu-Rr-T9z"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSt-zU-rfh" userLabel="BottomView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSt-zU-rfh" userLabel="bottomView" customClass="RegistrationView" customModule="Daljinac" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="382" width="375" height="285"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cena: 180 din (sa PDV) nedeljno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYQ-Vj-nVs">
