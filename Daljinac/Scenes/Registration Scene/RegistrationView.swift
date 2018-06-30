@@ -27,7 +27,23 @@ class RegistrationView: UIView, UITextFieldDelegate {
     @IBOutlet weak var aboutUsButton: UIButton!
     @IBOutlet weak var supportButton: UIButton!
     @IBOutlet weak var usingTermsButton: UIButton!
+    @IBOutlet weak var priceLbl: UILabel!
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
     
-
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    func commonInit() {
+        Bundle.main.loadNibNamed("RegistrationView", owner: self, options: nil)
+        addSubview(registrationView)
+        registrationView.frame = self.bounds
+        registrationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    }
+    
 }

@@ -14,6 +14,6 @@ struct RegistrationData {
      let lastName: String?
      let phoneNumber: String?
      let password: String?
-     let repassword: String?
+     let rePassword: String?
      let termsAccsepting: Bool?
 }

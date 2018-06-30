@@ -20,6 +20,7 @@
                 <outlet property="lastNameTxtFild" destination="hyw-4e-Jdh" id="HFf-d1-ghR"/>
                 <outlet property="passwordTxtFild" destination="zXh-Uv-PKS" id="zjF-BH-96V"/>
                 <outlet property="phoneNumberTxtFild" destination="2Ob-d6-qGb" id="whC-TO-EiR"/>
+                <outlet property="priceLbl" destination="PYQ-Vj-nVs" id="CMc-8y-wla"/>
                 <outlet property="rePasswordTxtFild" destination="Sbk-yr-c7d" id="YVF-iI-FRm"/>
                 <outlet property="registrationButton" destination="DTq-LI-66v" id="Ocz-pz-iYI"/>
                 <outlet property="registrationView" destination="1HV-tu-v4y" id="SCM-Dk-ljO"/>
@@ -36,7 +37,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRM-CY-Qda" userLabel="topView" customClass="RegistrationView" customModule="Daljinac" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRM-CY-Qda" userLabel="topView">
                     <rect key="frame" x="0.0" y="20" width="375" height="162"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daljinacLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IBW-ny-Cni">
@@ -85,7 +86,7 @@
                         <constraint firstItem="YWH-o7-gBT" firstAttribute="centerX" secondItem="pRM-CY-Qda" secondAttribute="centerX" id="z0M-BF-wvb"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6G4-Cx-nfh" userLabel="middleView" customClass="RegistrationView" customModule="Daljinac" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6G4-Cx-nfh" userLabel="middleView">
                     <rect key="frame" x="0.0" y="182" width="375" height="200"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pZZ-u0-ClF">
@@ -132,7 +133,7 @@
                         <constraint firstItem="pZZ-u0-ClF" firstAttribute="leading" secondItem="6G4-Cx-nfh" secondAttribute="leading" constant="50" id="upu-Rr-T9z"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSt-zU-rfh" userLabel="bottomView" customClass="RegistrationView" customModule="Daljinac" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSt-zU-rfh" userLabel="bottomView">
                     <rect key="frame" x="0.0" y="382" width="375" height="285"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cena: 180 din (sa PDV) nedeljno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYQ-Vj-nVs">
