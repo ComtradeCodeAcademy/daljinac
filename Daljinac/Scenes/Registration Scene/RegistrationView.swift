@@ -32,6 +32,7 @@ class RegistrationView: UIView, UITextFieldDelegate {
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
+      
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -45,5 +46,18 @@ class RegistrationView: UIView, UITextFieldDelegate {
         registrationView.frame = self.bounds
         registrationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
+    
+//        func updateUI() {
+//            
+//        registrationView.firstNameTextFild.placeholder = RegistrationData.firstName
+//        registrationView.lastNameTxtFild.placeholder = RegistrationData.lastName
+//        registrationView.passwordTxtFild.placeholder = RegistrationData.password
+//        registrationView.rePasswordTxtFild.placeholder = RegistrationData.rePassword
+//        registrationView.daljinacLink.text = "www.daljinac.com"
+//        registrationView.titleLable.text = "NAJVE"
+//        
+//        
+//        
+//    }
     
 }
