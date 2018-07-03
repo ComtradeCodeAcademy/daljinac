@@ -189,6 +189,9 @@
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                     <state key="normal" title="Spisak kanala"/>
+                                    <connections>
+                                        <action selector="chanelListTap:" destination="-2" eventType="touchUpInside" id="E8Q-09-MMR"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmD-97-OrX">
                                     <rect key="frame" x="130" y="0.0" width="60" height="31.666666666666668"/>
@@ -197,6 +200,9 @@
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                     <state key="normal" title="O nama"/>
+                                    <connections>
+                                        <action selector="aboutUsTap:" destination="-2" eventType="touchUpInside" id="uyd-SE-yQT"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nc2-wk-wp5">
                                     <rect key="frame" x="219.66666666666666" y="0.0" width="59.999999999999972" height="31.666666666666668"/>
@@ -205,6 +211,9 @@
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                     <state key="normal" title="Podrška"/>
+                                    <connections>
+                                        <action selector="supportTap:" destination="-2" eventType="touchUpInside" id="7z0-WQ-CLY"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUx-71-Frh">
                                     <rect key="frame" x="309" y="0.0" width="105" height="31.666666666666668"/>
@@ -213,6 +222,9 @@
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <state key="normal" title="Uslovi korišćenja"/>
+                                    <connections>
+                                        <action selector="termsOfUsingTap:" destination="-2" eventType="touchUpInside" id="Sn7-ce-mXG"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>

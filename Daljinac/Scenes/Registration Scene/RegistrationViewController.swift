@@ -64,23 +64,30 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
          }
         
     }
+    @IBAction func chanelListTap(_ sender: Any) {
+        
+        print("Spisak kanla")
+        
+        
+    }
     
+    @IBAction func aboutUsTap(_ sender: Any) {
+        
+        print("O nama")
+        
+    }
+    
+    @IBAction func supportTap(_ sender: Any) {
+        
+        print("Podrska")
+    }
+    @IBAction func termsOfUsingTap(_ sender: Any) {
+        print("Uslovi koriscenja")
+        
+    }
 }
 
-@IBAction func chanelListTap(_ sender: Any) {
-    
-    print("Spisak kanla")
-    
-    
-}
 
-@IBAction func aboutUsTap(_ sender: Any) {
-    
-    print("O nama")
-    
-}
-
-@IBAction func supportTap
         
 
     
