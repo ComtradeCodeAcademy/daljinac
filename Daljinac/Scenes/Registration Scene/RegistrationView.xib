@@ -40,7 +40,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRM-CY-Qda" userLabel="topView">
                     <rect key="frame" x="0.0" y="20" width="414" height="162"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daljinacLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IBW-ny-Cni">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicon" translatesAutoresizingMaskIntoConstraints="NO" id="IBW-ny-Cni">
                             <rect key="frame" x="152" y="0.0" width="110" height="110"/>
                             <color key="backgroundColor" red="0.02666439302" green="0.042982704939999998" blue="0.055419422689999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -154,7 +154,7 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adS-ma-Uyl" userLabel="termsButton">
                             <rect key="frame" x="58" y="8" width="30" height="30"/>
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="7mS-rc-QMs"/>
                                 <constraint firstAttribute="width" constant="30" id="SMC-PW-0ek"/>
@@ -259,9 +259,9 @@
         </view>
     </objects>
     <resources>
-        <image name="daljinacLogo" width="16" height="16"/>
-        <image name="isDeselected" width="46" height="44"/>
-        <image name="isSelected" width="46" height="44"/>
+        <image name="dicon" width="288" height="288"/>
+        <image name="isDeselected" width="150" height="150"/>
+        <image name="isSelected" width="162" height="157"/>
         <image name="telegrafLogo" width="16" height="16"/>
     </resources>
 </document>

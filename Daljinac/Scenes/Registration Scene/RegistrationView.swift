@@ -58,7 +58,7 @@ class RegistrationView: UIView, UITextFieldDelegate {
         self.phoneNumberTxtFild.placeholder = RegistrationData.phoneNumber
         self.daljinacLink.text = "www.daljinac.com"
         self.titleLable.text = "NAJVEVEĆI IZBOR KANALA"
-        self.termsButton.layer.cornerRadius = CGFloat.init(10)
+        self.termsButton.layer.cornerRadius = CGFloat.init(5)
         self.termsButton.layer.masksToBounds = true
         
         
@@ -66,12 +66,7 @@ class RegistrationView: UIView, UITextFieldDelegate {
     }
     
    
- 
-    
-  
-  
-    
-    
+   
 }
 
 
