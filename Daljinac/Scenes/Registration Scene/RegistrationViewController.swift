@@ -85,6 +85,10 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         print("Uslovi koriscenja")
         
     }
+    
+    @IBAction func homePageTap(_ sender: Any) {
+        print("GO TO HOMEPAGE")
+    }
 }
 
 

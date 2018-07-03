@@ -55,6 +55,9 @@
                                 <constraint firstAttribute="width" constant="44" id="sCJ-zX-hWA"/>
                             </constraints>
                             <state key="normal" title="Button" image="telegraf"/>
+                            <connections>
+                                <action selector="homePageTap:" destination="-2" eventType="touchUpInside" id="8z0-pz-Ytg"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.dajinac.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWH-o7-gBT">
                             <rect key="frame" x="133" y="139" width="148.33333333333337" height="23"/>
@@ -90,7 +93,7 @@
                         <constraint firstItem="YWH-o7-gBT" firstAttribute="centerX" secondItem="pRM-CY-Qda" secondAttribute="centerX" id="z0M-BF-wvb"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6G4-Cx-nfh" userLabel="middleView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6G4-Cx-nfh" userLabel="formView">
                     <rect key="frame" x="0.0" y="182" width="414" height="200"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pZZ-u0-ClF">
