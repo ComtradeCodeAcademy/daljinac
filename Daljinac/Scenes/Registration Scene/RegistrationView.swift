@@ -28,10 +28,12 @@ class RegistrationView: UIView, UITextFieldDelegate {
     @IBOutlet weak var supportButton: UIButton!
     @IBOutlet weak var usingTermsButton: UIButton!
     @IBOutlet weak var priceLbl: UILabel!
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
+        
       
     }
     
@@ -61,5 +63,14 @@ class RegistrationView: UIView, UITextFieldDelegate {
         
     }
     
+   
+ 
+    
+  
+  
+    
+    
 }
+
+
 
