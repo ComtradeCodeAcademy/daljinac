@@ -37,6 +37,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cube" translatesAutoresizingMaskIntoConstraints="NO" id="c8w-TG-lsk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRM-CY-Qda" userLabel="topView">
                     <rect key="frame" x="0.0" y="20" width="414" height="162"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -241,11 +244,17 @@
                     </subviews>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.02291116491" green="0.035144731399999997" blue="0.047555960709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="c8w-TG-lsk" firstAttribute="top" secondItem="1HV-tu-v4y" secondAttribute="top" id="a5i-np-5gE"/>
+                <constraint firstItem="c8w-TG-lsk" firstAttribute="trailing" secondItem="p9k-4n-fUX" secondAttribute="trailing" id="cKw-Tu-erF"/>
+                <constraint firstItem="c8w-TG-lsk" firstAttribute="bottom" secondItem="p9k-4n-fUX" secondAttribute="bottom" id="mUq-I5-ePH"/>
+                <constraint firstItem="c8w-TG-lsk" firstAttribute="leading" secondItem="p9k-4n-fUX" secondAttribute="leading" id="roG-J8-RSi"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="p9k-4n-fUX"/>
         </view>
     </objects>
     <resources>
+        <image name="cube" width="720" height="727"/>
         <image name="dicon" width="288" height="288"/>
         <image name="isDeselected" width="150" height="150"/>
         <image name="isSelected" width="162" height="157"/>
