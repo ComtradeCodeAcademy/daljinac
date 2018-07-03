@@ -60,6 +60,6 @@ class RegistrationView: UIView, UITextFieldDelegate {
         
         
     }
-    let modelName = UIDevice.current.modelName
+    
 }
 
