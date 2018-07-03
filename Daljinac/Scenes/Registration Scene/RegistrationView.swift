@@ -47,17 +47,19 @@ class RegistrationView: UIView, UITextFieldDelegate {
         registrationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
     
-//        func updateUI() {
-//            
-//        registrationView.firstNameTextFild.placeholder = RegistrationData.firstName
-//        registrationView.lastNameTxtFild.placeholder = RegistrationData.lastName
-//        registrationView.passwordTxtFild.placeholder = RegistrationData.password
-//        registrationView.rePasswordTxtFild.placeholder = RegistrationData.rePassword
-//        registrationView.daljinacLink.text = "www.daljinac.com"
-//        registrationView.titleLable.text = "NAJVE"
-//        
-//        
-//        
-//    }
-    
+        func updateUI() {
+            
+        self.firstNameTextFild.placeholder = RegistrationData.firstName
+        self.lastNameTxtFild.placeholder = RegistrationData.lastName
+        self.passwordTxtFild.placeholder = RegistrationData.password
+        self.rePasswordTxtFild.placeholder = RegistrationData.rePassword
+        self.phoneNumberTxtFild.placeholder = RegistrationData.phoneNumber
+        self.daljinacLink.text = "www.daljinac.com"
+        self.titleLable.text = "NAJVEVEĆI IZBOR KANALA"
+        
+        
+        
+    }
+    let modelName = UIDevice.current.modelName
 }
+

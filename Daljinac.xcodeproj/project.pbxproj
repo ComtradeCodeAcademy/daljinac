@@ -11,6 +11,7 @@
 		07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D68420C1C71400C2678C /* Daljinac.xcdatamodeld */; };
 		07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68720C1C71600C2678C /* Assets.xcassets */; };
 		07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */; };
+		0E09DC8020EAFFC2007B64CB /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E09DC7F20EAFFC2007B64CB /* UIDevice.swift */; };
 		0E3616CF20E795B8009AAB95 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3616CE20E795B8009AAB95 /* RegistrationData.swift */; };
 		0E3616D320E7C298009AAB95 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3616D220E7C298009AAB95 /* Authentication.storyboard */; };
 		0E99EDC020DA9A850067618F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDBF20DA9A850067618F /* LoginView.swift */; };
@@ -59,6 +60,7 @@
 		07E6D68720C1C71600C2678C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E6D68A20C1C71600C2678C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E6D68C20C1C71600C2678C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E09DC7F20EAFFC2007B64CB /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		0E3616CE20E795B8009AAB95 /* RegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationData.swift; sourceTree = "<group>"; };
 		0E3616D220E7C298009AAB95 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		0E99EDBF20DA9A850067618F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		0E99EDB520DA962E0067618F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0E09DC7F20EAFFC2007B64CB /* UIDevice.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				0EF4E08920E59D9B00714A61 /* CoreDataStack.swift in Sources */,
 				0E99EDE020DA9D240067618F /* PaymentViewController.swift in Sources */,
 				0E99EE0620DA9F830067618F /* CategoriesListView.swift in Sources */,
+				0E09DC8020EAFFC2007B64CB /* UIDevice.swift in Sources */,
 				0E99EDEC20DA9E010067618F /* CreditCardViewController.swift in Sources */,
 				0E99EDD420DA9C560067618F /* Terms and conditions  Terms and conditions  Terms and conditions  TermsAndConditionsViewController.swift in Sources */,
 				0E99EE0020DA9F320067618F /* ChannelListViewController.swift in Sources */,
