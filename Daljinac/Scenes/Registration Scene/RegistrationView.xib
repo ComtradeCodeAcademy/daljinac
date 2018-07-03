@@ -54,7 +54,7 @@
                                 <constraint firstAttribute="height" constant="44" id="n04-H5-oub"/>
                                 <constraint firstAttribute="width" constant="44" id="sCJ-zX-hWA"/>
                             </constraints>
-                            <state key="normal" title="Button" image="telegrafLogo"/>
+                            <state key="normal" title="Button" image="telegraf"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.dajinac.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWH-o7-gBT">
                             <rect key="frame" x="133" y="139" width="148.33333333333337" height="23"/>
@@ -262,6 +262,6 @@
         <image name="dicon" width="288" height="288"/>
         <image name="isDeselected" width="150" height="150"/>
         <image name="isSelected" width="162" height="157"/>
-        <image name="telegrafLogo" width="16" height="16"/>
+        <image name="telegraf" width="246" height="246"/>
     </resources>
 </document>
