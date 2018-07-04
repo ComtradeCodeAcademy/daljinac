@@ -56,17 +56,31 @@ class RegistrationView: UIView, UITextFieldDelegate {
     
         func updateUI() {
         // update formView
-        self.firstNameTextFild.placeholder = RegistrationData.firstName
-        self.lastNameTxtFild.placeholder = RegistrationData.lastName
-        self.passwordTxtFild.placeholder = RegistrationData.password
-        self.rePasswordTxtFild.placeholder = RegistrationData.rePassword
-        self.phoneNumberTxtFild.placeholder = RegistrationData.phoneNumber
+        self.firstNameTextFild.placeholder = "Ime"
+        self.firstNameTextFild.font = UIFont(name: "Avenir-Light", size: 20)
+        self.lastNameTxtFild.placeholder = "Prezime"
+        self.lastNameTxtFild.font = UIFont(name: "Avenir-Light", size: 20)
+        self.passwordTxtFild.placeholder = " Lozinka"
+        self.passwordTxtFild.font = UIFont(name: "Avenir-Light", size: 20)
+        self.rePasswordTxtFild.placeholder = "Ponovi lozinku"
+        self.rePasswordTxtFild.font = UIFont(name: "Avenir-Light", size: 20)
+        self.phoneNumberTxtFild.placeholder = "+3816"
+        self.phoneNumberTxtFild.font = UIFont(name: "Avenir-Light", size: 20)
         // update title
         self.daljinacLink.text = "www.daljinac.com"
+        self.daljinacLink.font = UIFont(name: "Avenir-Light", size: 19)
         self.titleLable.text = "NAJVEVEĆI IZBOR KANALA"
+        self.titleLable.font = UIFont(name: "Avenir-Light", size: 19)
+        self.titleLable.font = UIFont.boldSystemFont(ofSize: 19)
         // update checkbox button
         self.termsButton.layer.cornerRadius = CGFloat.init(5)
         self.termsButton.layer.masksToBounds = true
+        // update price label
+        self.priceLbl.text = "Cena: 180 din (sa PDV) nedeljno"
+        self.priceLbl.font = UIFont(name: "Avenir-Light", size: 17)
+        // update terms label
+        self.termsLbl.text = "Prihvatam uslove korišćenja"
+        self.firstNameTextFild.font = UIFont(name: "Avenir-Light", size: 17)
         // update subViews of formView
         self.nameView.layer.cornerRadius = CGFloat.init(8)
         self.lastNameView.layer.cornerRadius = CGFloat.init(8)
@@ -80,6 +94,8 @@ class RegistrationView: UIView, UITextFieldDelegate {
         self.ChanelListButton.setTitle("Spisak kanala", for: .normal)
         self.aboutUsButton.setTitle("O nama", for: .normal)
         self.supportButton.setTitle("Podrška", for: .normal)
+        self.usingTermsButton.setTitle("Uslovi korišćenja", for: .normal)
+        
         
     }
     

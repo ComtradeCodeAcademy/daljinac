@@ -149,23 +149,25 @@
                                     <rect key="frame" x="0.0" y="118" width="319" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+381" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-d6-qGb" userLabel="phoneNumberTxtFild">
-                                            <rect key="frame" x="40" y="0.0" width="279" height="50"/>
+                                            <rect key="frame" x="45" y="0.0" width="274" height="50"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" textContentType="tel"/>
                                         </textField>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pr-Hk-v0U">
-                                            <rect key="frame" x="4" y="10" width="40" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testSerbia" translatesAutoresizingMaskIntoConstraints="NO" id="9pr-Hk-v0U">
+                                            <rect key="frame" x="4" y="12" width="30" height="26"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="2Ob-d6-qGb" firstAttribute="leading" secondItem="kqe-qC-tPL" secondAttribute="leading" constant="40" id="687-vm-W0U"/>
+                                        <constraint firstItem="2Ob-d6-qGb" firstAttribute="leading" secondItem="kqe-qC-tPL" secondAttribute="leading" constant="45" id="687-vm-W0U"/>
+                                        <constraint firstItem="2Ob-d6-qGb" firstAttribute="leading" secondItem="9pr-Hk-v0U" secondAttribute="trailing" constant="11" id="6Ad-wx-SU6"/>
+                                        <constraint firstItem="9pr-Hk-v0U" firstAttribute="leading" secondItem="kqe-qC-tPL" secondAttribute="leading" constant="4" id="8Lc-w6-lvh"/>
                                         <constraint firstAttribute="bottom" secondItem="2Ob-d6-qGb" secondAttribute="bottom" id="L1c-fm-dJG"/>
                                         <constraint firstItem="2Ob-d6-qGb" firstAttribute="top" secondItem="kqe-qC-tPL" secondAttribute="top" id="WOx-v4-ZbG"/>
                                         <constraint firstAttribute="trailing" secondItem="2Ob-d6-qGb" secondAttribute="trailing" id="XIs-us-gDR"/>
+                                        <constraint firstItem="9pr-Hk-v0U" firstAttribute="centerY" secondItem="kqe-qC-tPL" secondAttribute="centerY" id="ZEv-PI-8Eg"/>
                                         <constraint firstItem="2Ob-d6-qGb" firstAttribute="centerY" secondItem="kqe-qC-tPL" secondAttribute="centerY" id="jpd-rC-GU1"/>
                                     </constraints>
                                 </view>
@@ -267,32 +269,32 @@
                             <rect key="frame" x="10" y="184.33333333333337" width="394" height="32.666666666666657"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgd-1Z-1ZU">
-                                    <rect key="frame" x="0.0" y="0.0" width="83" height="32.666666666666664"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="32.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" title="Spisak kanala"/>
                                     <connections>
                                         <action selector="chanelListTap:" destination="-2" eventType="touchUpInside" id="E8Q-09-MMR"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmD-97-OrX">
-                                    <rect key="frame" x="122.66666666666666" y="0.0" width="47" height="32.666666666666664"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <rect key="frame" x="119" y="0.0" width="53" height="32.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" title="O nama"/>
                                     <connections>
                                         <action selector="aboutUsTap:" destination="-2" eventType="touchUpInside" id="uyd-SE-yQT"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nc2-wk-wp5">
-                                    <rect key="frame" x="209.33333333333334" y="0.0" width="49.000000000000028" height="32.666666666666664"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <rect key="frame" x="197" y="0.0" width="56" height="32.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" title="Podrška"/>
                                     <connections>
                                         <action selector="supportTap:" destination="-2" eventType="touchUpInside" id="7z0-WQ-CLY"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUx-71-Frh">
-                                    <rect key="frame" x="298" y="0.0" width="96" height="32.666666666666664"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <rect key="frame" x="278" y="0.0" width="116" height="32.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" title="Uslovi korišćenja"/>
                                     <connections>
                                         <action selector="termsOfUsingTap:" destination="-2" eventType="touchUpInside" id="Sn7-ce-mXG"/>
@@ -364,5 +366,6 @@
         <image name="isDeselected" width="150" height="150"/>
         <image name="isSelected" width="162" height="157"/>
         <image name="telegraf" width="246" height="246"/>
+        <image name="testSerbia" width="38" height="26"/>
     </resources>
 </document>

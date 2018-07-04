@@ -9,10 +9,10 @@
 import Foundation
 
 struct RegistrationData {
-    static var firstName: String = "Ime",
-    lastName: String = "Prezime" ,
-    phoneNumber: String = "+381642315939" ,
-    password: String = "password" ,
-    rePassword: String = "repassword" ,
-    termsAccsepting: Bool = true
+    static var firstName: String?,
+    lastName: String? ,
+    phoneNumber: String? ,
+    password: String? ,
+    rePassword: String?,
+    termsAccsepting: Bool?
 }
