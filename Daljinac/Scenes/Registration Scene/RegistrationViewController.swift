@@ -110,7 +110,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
 //        performSegue(withIdentifier: "openHomePage", sender: AnyObject.self)
         
-        print("Po")
+        print("Početna strana")
     }
 }
 
