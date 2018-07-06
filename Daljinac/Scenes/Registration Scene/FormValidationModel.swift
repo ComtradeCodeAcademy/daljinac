@@ -10,6 +10,7 @@ import Foundation
 
 
 struct  FormValidationModel {
+    
     var firstName: String?
     var lastName: String?
     var phoneNumber: String?
@@ -17,16 +18,17 @@ struct  FormValidationModel {
     var activationCode: String?
     var password: String?
     var repassword: String?
+    
 
 
 
-    init(userName: String, userLastName: String?,userPassword: String, userRepassword: String, userEmail: String, mobile: String, code: String) {
+    init(userName: String, userLastName: String?,userPassword: String, userRepassword: String, userEmail: String, mobile: String, userCode: String) {
  
         firstName = userName
         lastName = userLastName
         phoneNumber = mobile
         email = userEmail
-        activationCode = code
+        activationCode = userCode
         password = userPassword
         repassword = userRepassword
     
