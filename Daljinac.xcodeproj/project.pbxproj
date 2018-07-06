@@ -14,6 +14,7 @@
 		0E09DC8020EAFFC2007B64CB /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E09DC7F20EAFFC2007B64CB /* UIDevice.swift */; };
 		0E3616CF20E795B8009AAB95 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3616CE20E795B8009AAB95 /* RegistrationData.swift */; };
 		0E3616D320E7C298009AAB95 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3616D220E7C298009AAB95 /* Authentication.storyboard */; };
+		0E43665920EEE73300E156A3 /* FormValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43665820EEE73300E156A3 /* FormValidationModel.swift */; };
 		0E99EDC020DA9A850067618F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDBF20DA9A850067618F /* LoginView.swift */; };
 		0E99EDC220DA9AB80067618F /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDC120DA9AB80067618F /* LoginView.xib */; };
 		0E99EDC420DA9AF60067618F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDC320DA9AF60067618F /* LoginViewController.swift */; };
@@ -63,6 +64,7 @@
 		0E09DC7F20EAFFC2007B64CB /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		0E3616CE20E795B8009AAB95 /* RegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationData.swift; sourceTree = "<group>"; };
 		0E3616D220E7C298009AAB95 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		0E43665820EEE73300E156A3 /* FormValidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationModel.swift; sourceTree = "<group>"; };
 		0E99EDBF20DA9A850067618F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0E99EDC120DA9AB80067618F /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		0E99EDC320DA9AF60067618F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			children = (
 				0E99EDC720DA9B440067618F /* RegistrationView.xib */,
 				0E3616CE20E795B8009AAB95 /* RegistrationData.swift */,
+				0E43665820EEE73300E156A3 /* FormValidationModel.swift */,
 				0E99EDC520DA9B280067618F /* RegistrationViewController.swift */,
 				0E99EDC920DA9B750067618F /* RegistrationView.swift */,
 			);
@@ -484,6 +487,7 @@
 				0E99EDD620DA9C7D0067618F /* TermsAndConditionsView.swift in Sources */,
 				0E99EDC020DA9A850067618F /* LoginView.swift in Sources */,
 				07E6D68620C1C71400C2678C /* Daljinac.xcdatamodeld in Sources */,
+				0E43665920EEE73300E156A3 /* FormValidationModel.swift in Sources */,
 				0E99EDDA20DA9CCD0067618F /* SmsCodeViewViewController.swift in Sources */,
 				0E99EDCA20DA9B750067618F /* RegistrationView.swift in Sources */,
 				0E99EDDC20DA9CF00067618F /* SmsCodeView.swift in Sources */,

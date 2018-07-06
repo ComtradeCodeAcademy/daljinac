@@ -70,17 +70,18 @@ class RegistrationView: UIView, UITextFieldDelegate {
         self.daljinacLink.text = "www.daljinac.com"
         self.daljinacLink.font = UIFont(name: "Avenir-Light", size: 19)
         self.titleLable.text = "NAJVEVEĆI IZBOR KANALA"
-        self.titleLable.font = UIFont(name: "Avenir-Light", size: 19)
+        self.titleLable.font = UIFont(name: "Avenir-Light", size: 20)
         self.titleLable.font = UIFont.boldSystemFont(ofSize: 19)
         // update checkbox button
         self.termsButton.layer.cornerRadius = CGFloat.init(5)
         self.termsButton.layer.masksToBounds = true
         // update price label
         self.priceLbl.text = "Cena: 180 din (sa PDV) nedeljno"
-        self.priceLbl.font = UIFont(name: "Avenir-Light", size: 17)
+        self.priceLbl.font = UIFont(name: "Avenir-Light", size: 18)
         // update terms label
         self.termsLbl.text = "Prihvatam uslove korišćenja"
-        self.firstNameTextFild.font = UIFont(name: "Avenir-Light", size: 17)
+        self.termsLbl.font = UIFont(name: "Avenir-Light", size: 20)
+        self.termsLbl.font = UIFont.boldSystemFont(ofSize: 20)
         // update subViews of formView
         self.nameView.layer.cornerRadius = CGFloat.init(8)
         self.lastNameView.layer.cornerRadius = CGFloat.init(8)
