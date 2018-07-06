@@ -12,7 +12,6 @@
 		07E6D68820C1C71600C2678C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68720C1C71600C2678C /* Assets.xcassets */; };
 		07E6D68B20C1C71600C2678C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E6D68920C1C71600C2678C /* LaunchScreen.storyboard */; };
 		0E09DC8020EAFFC2007B64CB /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E09DC7F20EAFFC2007B64CB /* UIDevice.swift */; };
-		0E3616CF20E795B8009AAB95 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3616CE20E795B8009AAB95 /* RegistrationData.swift */; };
 		0E3616D320E7C298009AAB95 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3616D220E7C298009AAB95 /* Authentication.storyboard */; };
 		0E43665920EEE73300E156A3 /* FormValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43665820EEE73300E156A3 /* FormValidationModel.swift */; };
 		0E43665B20EF04F900E156A3 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43665A20EF04F900E156A3 /* ValidationError.swift */; };
@@ -64,7 +63,6 @@
 		07E6D68A20C1C71600C2678C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E6D68C20C1C71600C2678C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E09DC7F20EAFFC2007B64CB /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
-		0E3616CE20E795B8009AAB95 /* RegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationData.swift; sourceTree = "<group>"; };
 		0E3616D220E7C298009AAB95 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		0E43665820EEE73300E156A3 /* FormValidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationModel.swift; sourceTree = "<group>"; };
 		0E43665A20EF04F900E156A3 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
@@ -280,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				0E99EDC720DA9B440067618F /* RegistrationView.xib */,
-				0E3616CE20E795B8009AAB95 /* RegistrationData.swift */,
 				0E43665820EEE73300E156A3 /* FormValidationModel.swift */,
 				0E99EDC520DA9B280067618F /* RegistrationViewController.swift */,
 				0E43665C20EF0EB200E156A3 /* ValidationMenager.swift */,
@@ -489,7 +486,6 @@
 				0E99EDE220DA9D480067618F /* PaymentView.swift in Sources */,
 				0E99EDC420DA9AF60067618F /* LoginViewController.swift in Sources */,
 				0E99EDFA20DA9EE80067618F /* ChannelsAndCategoriesView.swift in Sources */,
-				0E3616CF20E795B8009AAB95 /* RegistrationData.swift in Sources */,
 				0E99EDCC20DA9BBA0067618F /* ForgotPasswordView.swift in Sources */,
 				0E99EDD620DA9C7D0067618F /* TermsAndConditionsView.swift in Sources */,
 				0E99EDC020DA9A850067618F /* LoginView.swift in Sources */,

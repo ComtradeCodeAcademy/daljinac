@@ -10,7 +10,7 @@ import UIKit
 
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var registrationView: RegistrationView!
-    
+    var registrationForm : FormValidationModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,12 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func sendRegistrationData(_ sender: Any) {
-        
+//        DispatchQueue.global(.global(qos: )) {
+        registrationForm.firstName = registrationView.firstNameTextFild.text
+        registrationForm.lastName = registrationView.lastNameTxtFild.text
+        registrationForm.phoneNumber = registrationView.phoneNumberTxtFild.text
+        registrationForm.password = registrationView.passwordTxtFild.text
+        registrationForm.repassword = registrationView.rePasswordTxtFild.text
         
         print("dare je car")
         
@@ -85,22 +90,27 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func aboutUsTap(_ sender: Any) {
-        
+//        performSegue(withIdentifier: "openAboutUS", sender: AnyObject.self)
         print("O nama")
         
     }
     
     @IBAction func supportTap(_ sender: Any) {
-        
+//          performSegue(withIdentifier: "openSupport", sender: AnyObject.self)
         print("Podrska")
     }
     @IBAction func termsOfUsingTap(_ sender: Any) {
+        
+//          performSegue(withIdentifier: "openTerms", sender: AnyObject.self)
         print("Uslovi koriscenja")
         
     }
     
     @IBAction func homePageTap(_ sender: Any) {
-        print("GO TO HOMEPAGE")
+        
+//        performSegue(withIdentifier: "openHomePage", sender: AnyObject.self)
+        
+        print("Po")
     }
 }
 
