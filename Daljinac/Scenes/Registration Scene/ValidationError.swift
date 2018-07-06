@@ -8,26 +8,26 @@
 
 import Foundation
 
-struct ValidationError {
-    var errorMessage: String!
+  struct ValidationError {
+    var errorString: String!
     var errorCode: Int!
     
     init(code: Int, message: String) {
-        errorMessage = message
+        errorString = message
         errorCode = code
     }
     struct ErrorCodes {
         static let errorCodeEmptyText = 3003
         static let errorCodeInvalidPassword = 3006
         static let errorCodeInvalidRepassword = 3005
-        static let errorInvalidMobilNo = 3008
+        static let errorCodeInvalidMobilNo = 3008
         static let errorCodeInvalidName = 3010
         static let errorCodeInvalidLastName = 3004
         static let errorCodeInvalidActivacionCode = 3001
         static let errorCodeInvalidEmail = 3002
     }
     
-    struct ErrorMessage {
+    struct ErrorMessages {
         
         static let msgEmptyName = "Unesite vaše ime"
         static let msgInvalidName = "Neispravno uneto ime"

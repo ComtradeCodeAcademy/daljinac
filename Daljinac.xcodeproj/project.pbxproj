@@ -16,6 +16,7 @@
 		0E3616D320E7C298009AAB95 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3616D220E7C298009AAB95 /* Authentication.storyboard */; };
 		0E43665920EEE73300E156A3 /* FormValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43665820EEE73300E156A3 /* FormValidationModel.swift */; };
 		0E43665B20EF04F900E156A3 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43665A20EF04F900E156A3 /* ValidationError.swift */; };
+		0E43665D20EF0EB200E156A3 /* ValidationMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43665C20EF0EB200E156A3 /* ValidationMenager.swift */; };
 		0E99EDC020DA9A850067618F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDBF20DA9A850067618F /* LoginView.swift */; };
 		0E99EDC220DA9AB80067618F /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E99EDC120DA9AB80067618F /* LoginView.xib */; };
 		0E99EDC420DA9AF60067618F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99EDC320DA9AF60067618F /* LoginViewController.swift */; };
@@ -67,6 +68,7 @@
 		0E3616D220E7C298009AAB95 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		0E43665820EEE73300E156A3 /* FormValidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationModel.swift; sourceTree = "<group>"; };
 		0E43665A20EF04F900E156A3 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		0E43665C20EF0EB200E156A3 /* ValidationMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationMenager.swift; sourceTree = "<group>"; };
 		0E99EDBF20DA9A850067618F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0E99EDC120DA9AB80067618F /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		0E99EDC320DA9AF60067618F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				0E3616CE20E795B8009AAB95 /* RegistrationData.swift */,
 				0E43665820EEE73300E156A3 /* FormValidationModel.swift */,
 				0E99EDC520DA9B280067618F /* RegistrationViewController.swift */,
+				0E43665C20EF0EB200E156A3 /* ValidationMenager.swift */,
 				0E43665A20EF04F900E156A3 /* ValidationError.swift */,
 				0E99EDC920DA9B750067618F /* RegistrationView.swift */,
 			);
@@ -498,6 +501,7 @@
 				0E99EDE820DA9DB20067618F /* ChooseTypeView.swift in Sources */,
 				0E99EE0420DA9F5D0067618F /* CategoriesListViewController.swift in Sources */,
 				0E99EDF820DA9EC70067618F /* ChannelsAndCategoriesViewController.swift in Sources */,
+				0E43665D20EF0EB200E156A3 /* ValidationMenager.swift in Sources */,
 				07E6D67E20C1C71400C2678C /* AppDelegate.swift in Sources */,
 				0E99EDFE20DA9F1B0067618F /* ChannelListView.swift in Sources */,
 				0E99EDC620DA9B280067618F /* RegistrationViewController.swift in Sources */,
