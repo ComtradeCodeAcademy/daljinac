@@ -10,23 +10,17 @@ import Foundation
 
 struct ValidationMenager {
 
-static private let regexEmail = "[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}"
-static private let regexMobNo = "^[0-9]{6,15}$"
+static private let regexMobNo = "^[0-9+]{6,15}$"
 static private let regexNameType = "^[a-zA-Z]+$"
 static private let regexLastNameType = "^[a-zA-Z]+$"
 // Password must be more than 6 characters, with at least one capital, numeric or special character
 static private let regexPasswordType = " ^.*(?=.{6,})(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*\\d)|(?=.*[!#$%&?]).*$ "
-static private let regexRepassword = regexPasswordType
+static private let regexConfirmPassword = regexPasswordType
 
 
  static func validateForm(signUpModel: FormValidationModel) -> ValidationError? {
     
     var validationError: ValidationError? = nil
-    validationError = validateEmailId(email: signUpModel.email!)
-    if validationError != nil {
-        
-        return validationError
-    }
     
     validationError = validateNameString(string: signUpModel.firstName!)
     if validationError != nil {
@@ -42,26 +36,6 @@ static private let regexRepassword = regexPasswordType
       return validationError
 }
 
-//MARK: validate emailID
-
-private static func validateEmailId(email: String) -> ValidationError?
-{
-    var validationError : ValidationError? = nil
-    
-    if email == ""
-    {
-        validationError = ValidationError(code: ValidationError.ErrorCodes.errorCodeEmptyText, message: ValidationError.ErrorMessages.msgEmptyEmail)
-    }
-    else {
-        let emailTest = NSPredicate(format: "SELF MATCHES %@", regexEmail)
-        let matchEmailId = emailTest.evaluate(with: email)
-        if(!matchEmailId)
-        {
-            validationError = ValidationError(code: ValidationError.ErrorCodes.errorCodeInvalidEmail, message: ValidationError.ErrorMessages.msgInvalidEmail)
-        }
-    }
-    return validationError
-}
 
 //MARK: validate Mobile number
 
@@ -83,7 +57,7 @@ private static func validateEmailId(email: String) -> ValidationError?
     return validationError
 }
 
-//MARK: validate name
+//MARK: validate FirstName
 
 private static func validateNameString(string: String) -> ValidationError?
 {
@@ -103,7 +77,7 @@ private static func validateNameString(string: String) -> ValidationError?
     return validationError
 }
 
-    //MARK: validate Last Name
+    //MARK: validate LastName
 
     private static func validateLastNameString(string: String) -> ValidationError?
     {
@@ -132,8 +106,8 @@ private static func validateNameString(string: String) -> ValidationError?
             validationError = ValidationError(code: ValidationError.ErrorCodes.errorCodeEmptyText, message: ValidationError.ErrorMessages.msgEmptyPassword)
         }
         else {
-                let passwordTest = NSPredicate(format: "SELF MATCHES %@", regexPasswordType)
             
+            let passwordTest = NSPredicate(format: "SELF MATCHES %@", regexPasswordType)
             let matchPasswordType = passwordTest.evaluate(with: string)
             if !matchPasswordType
             {
@@ -144,6 +118,25 @@ private static func validateNameString(string: String) -> ValidationError?
 return validationError
         
 }
+            //MARK: validate ConfirmPassword
     
-
+    private static func validateConfirmPasswordString(string: String) -> ValidationError? {
+        
+        var validationError : ValidationError? = nil
+        if string == "" {
+            validationError = ValidationError(code: ValidationError.ErrorCodes.errorCodeEmptyText, message: ValidationError.ErrorMessages.msgEmptyConfirmPassword)
+        }
+        else {
+            
+            let confirmPasswordTest = NSPredicate(format:"SELF METCH%@", regexPasswordType)
+            let matchConfirmPasswordType = confirmPasswordTest.evaluate(with: string)
+            if !matchConfirmPasswordType
+            {
+                validationError = ValidationError(code: ValidationError.ErrorCodes.errorCodeInvalidPassword, message: ValidationError.ErrorMessages.msgInvalidConfirmPassword)
+            }
+            
+        }
+        return validationError
+    }
+    
 }
