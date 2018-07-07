@@ -47,13 +47,15 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func sendRegistrationData(_ sender: Any) {
-//        DispatchQueue.global(.global(qos: )) {
-        registrationForm.firstName = registrationView.firstNameTextFild.text
-        registrationForm.lastName = registrationView.lastNameTxtFild.text
-        registrationForm.phoneNumber = registrationView.phoneNumberTxtFild.text
-        registrationForm.password = registrationView.passwordTxtFild.text
-        registrationForm.repassword = registrationView.rePasswordTxtFild.text
         
+       
+//        DispatchQueue.global(.global(qos: )) {
+//        registrationForm.firstName = registrationView.firstNameTextFild.text
+//        registrationForm.lastName = registrationView.lastNameTxtFild.text
+//        registrationForm.phoneNumber = registrationView.phoneNumberTxtFild.text
+//        registrationForm.password = registrationView.passwordTxtFild.text
+//        registrationForm.repassword = registrationView.rePasswordTxtFild.text
+//        
         print("dare je car")
         
         

@@ -14,23 +14,19 @@ struct  FormValidationModel {
     var firstName: String?
     var lastName: String?
     var phoneNumber: String?
-    var email: String?
-    var activationCode: String?
     var password: String?
-    var repassword: String?
+    var confirmPassword: String?
     
 
 
 
-    init(userName: String, userLastName: String?,userPassword: String, userRepassword: String, userEmail: String, mobile: String, userCode: String) {
+    init(userName: String, userLastName: String?,userPassword: String, userRepassword: String, mobile: String) {
  
         firstName = userName
         lastName = userLastName
         phoneNumber = mobile
-        email = userEmail
-        activationCode = userCode
         password = userPassword
-        repassword = userRepassword
+        confirmPassword = userRepassword
     
     }
     
