@@ -8,9 +8,16 @@
 
 import UIKit
 
+
+
+
+
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
+    
+    
     @IBOutlet var registrationView: RegistrationView!
-    var registrationForm : FormValidationModel!
+    var registrationForm = FormValidationModel(userName: "Darko", userLastName: "Batur", userPassword: "22222", userRepassword: "22222", mobile: "0642315939")
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,29 +41,57 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
 //    }
     
+//    func validateInputData () throws {
+//
+//        // check username
+//        let phoneValdationError = ValidationMenager.validateForm(signUpModel: self.registrat)
+//        if nil != phoneValdationError {
+//            throw phoneValdationError
+//        }
+////                if self.registrationForm.phoneNumber
+////                guard let item = inventory[name]
+////                    else {
+////                    throw VendingMachineError.invalidSelection
+////                }
+//        return true
+//    }
+    
+    
+    
+    
      // MARK: - KEYBOARD Notification
     
     
     
-    
-     
+
     
     
     
     // MARK: - SEND REGISTRATION DATA
+  
     
+
+        
+     
     
     @IBAction func sendRegistrationData(_ sender: Any) {
         
-       
+        
+
+        
+//        ValidationMenager.validateForm(signUpModel: .init(userName: registrationView.firstNameTextFild.text, userLastName: registrationView.lastNameTxtFild.text!, userPassword: registrationView.phoneNumberTxtFild.text!, userRepassword: registrationView.passwordTxtFild.text!, mobile: registrationView.rePasswordTxtFild.text!))
+//        var ime: String = registrationView.firstNameTextFild.text!
+//        var prezime = registrationView.lastNameTxtFild.text!
+//        var telefon: String = registrationView.phoneNumberTxtFild.text!
+//
+        
+    
+        
+        
 //        DispatchQueue.global(.global(qos: )) {
-//        registrationForm.firstName = registrationView.firstNameTextFild.text
-//        registrationForm.lastName = registrationView.lastNameTxtFild.text
-//        registrationForm.phoneNumber = registrationView.phoneNumberTxtFild.text
-//        registrationForm.password = registrationView.passwordTxtFild.text
-//        registrationForm.repassword = registrationView.rePasswordTxtFild.text
-//        
-        print("dare je car")
+      
+    
+        print("ime")
         
         
     }
@@ -114,7 +149,18 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
         print("Početna strana")
     }
-}
+    
+       func validateForm(signUpModel: FormValidationModel) throws {
+        
+        registrationForm.firstName = registrationView.firstNameTextFild.text
+        registrationForm.lastName = registrationView.lastNameTxtFild.text
+        registrationForm.phoneNumber = registrationView.phoneNumberTxtFild.text
+        registrationForm.password = registrationView.passwordTxtFild.text
+        registrationForm.confirmPassword = registrationView.rePasswordTxtFild.text
+        
+       
+   
+//}
 
 
         
