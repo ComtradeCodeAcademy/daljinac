@@ -16,18 +16,20 @@ struct  FormValidationModel {
     var phoneNumber: String?
     var password: String?
     var confirmPassword: String?
+    var confimTerms: Bool?
 
     
 
 
 
-    init(userName: String?, userLastName: String,userPassword: String, userRepassword: String, mobile: String) {
+    init(userName: String?, userLastName: String,userPassword: String, userRepassword: String, mobile: String, terms: Bool) {
  
         firstName = userName
         lastName = userLastName
         phoneNumber = mobile
         password = userPassword
         confirmPassword = userRepassword
+        confimTerms = terms
     
     }
     

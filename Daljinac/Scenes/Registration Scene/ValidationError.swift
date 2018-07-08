@@ -17,14 +17,14 @@ import Foundation
         errorCode = code
     }
     struct ErrorCodes {
-        static let errorCodeEmptyText = 3003
-        static let errorCodeInvalidPassword = 3006
-        static let errorCodeInvalidRepassword = 3005
-        static let errorCodeInvalidMobilNo = 3008
-        static let errorCodeInvalidName = 3010
-        static let errorCodeInvalidLastName = 3004
-        static let errorCodeInvalidActivacionCode = 3001
-        static let errorCodeInvalidEmail = 3002
+        static let errorTitleEmptyText = "Nepoptpuna forma"
+        static let errorTitleInvalidPassword = 3006
+        static let errorTitleInvalidRepassword = 3005
+        static let errorTitleInvalidMobilNo = 3008
+        static let errorTitleInvalidName = 3010
+        static let errorTitleInvalidLastName = 3004
+        static let errorTitleInvalidActivacionCode = 3001
+        static let errorTitleInvalidEmail = 3002
     }
     
     struct ErrorMessages {

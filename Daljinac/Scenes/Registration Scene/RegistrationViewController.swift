@@ -16,7 +16,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet var registrationView: RegistrationView!
-    var registrationForm = FormValidationModel(userName: "Darko", userLastName: "Batur", userPassword: "22222", userRepassword: "22222", mobile: "0642315939")
+    var registrationForm = FormValidationModel(userName: "Darko", userLastName: "Batur", userPassword: "22222", userRepassword: "22222", mobile: "0642315939", terms: true)
  
     
     override func viewDidLoad() {
@@ -76,23 +76,30 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func sendRegistrationData(_ sender: Any) {
         
-        
-
-        
-//        ValidationMenager.validateForm(signUpModel: .init(userName: registrationView.firstNameTextFild.text, userLastName: registrationView.lastNameTxtFild.text!, userPassword: registrationView.phoneNumberTxtFild.text!, userRepassword: registrationView.passwordTxtFild.text!, mobile: registrationView.rePasswordTxtFild.text!))
-//        var ime: String = registrationView.firstNameTextFild.text!
-//        var prezime = registrationView.lastNameTxtFild.text!
-//        var telefon: String = registrationView.phoneNumberTxtFild.text!
-//
-        
-    
-        
-        
-//        DispatchQueue.global(.global(qos: )) {
-      
-    
-        print("ime")
-        
+        do {
+            try? registration()
+        } catch RegistrationError.emptyFirstName {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyName, vc: self)
+        } catch RegistrationError.emptyLastName {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyLastName, vc: self)
+        } catch RegistrationError.emptyPhoneNumber {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyMobilNo, vc: self)
+        } catch RegistrationError.emptyPassword {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyPassword, vc: self)
+        } catch RegistrationError.emptyConfirmPassword {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyConfirmPassword, vc: self)
+        }
+        catch RegistrationError.invalidFirstName {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidName, vc: self)
+        } catch RegistrationError.invalidLastName {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidLastName, vc: self)
+        } catch RegistrationError.invalidPhone {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidMobilNo, vc: self)
+        } catch RegistrationError.invalidPassword {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidPassword, vc: self)
+        } catch RegistrationError.invalidConfirmPassword {
+            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidConfirmPassword, vc: self)
+        }
         
     }
     
@@ -150,17 +157,53 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         print("Početna strana")
     }
     
-       func validateForm(signUpModel: FormValidationModel) throws {
+       func registration() throws {
         
         registrationForm.firstName = registrationView.firstNameTextFild.text
         registrationForm.lastName = registrationView.lastNameTxtFild.text
         registrationForm.phoneNumber = registrationView.phoneNumberTxtFild.text
         registrationForm.password = registrationView.passwordTxtFild.text
         registrationForm.confirmPassword = registrationView.rePasswordTxtFild.text
+      
+        if (registrationForm.firstName?.isEmpty)! {
+            throw RegistrationError.emptyFirstName
+        }
+        if (registrationForm.lastName?.isEmpty)! {
+            throw RegistrationError.emptyLastName
+        }
+        if (registrationForm.phoneNumber?.isEmpty)! {
+            throw RegistrationError.emptyPhoneNumber
+        }
+        if (registrationForm.password?.isEmpty)! {
+            throw RegistrationError.emptyPassword
+        }
+        if (registrationForm.confirmPassword?.isEmpty)! {
+            throw RegistrationError.emptyConfirmPassword
+        }
+        if registrationForm.confimTerms != registrationView.termsButton.isSelected {
+            throw RegistrationError.termsUnCheck
+        }
+        if !(registrationForm.firstName?.isValidName)! {
+            throw RegistrationError.invalidFirstName
+        }
+        if !(registrationForm.lastName?.isValidLastName)! {
+            throw RegistrationError.invalidLastName
+        }
+        if !(registrationForm.phoneNumber?.isValidNumber)! {
+            throw RegistrationError.invalidPhone
+        }
+        if !(registrationForm.password?.isValidPassword)! {
+            throw RegistrationError.invalidPassword
+        }
+        if !(registrationForm.confirmPassword?.isValidConfirmPassword)! {
+            throw RegistrationError.invalidConfirmPassword
+        }
+      
         
+}
        
    
-//}
+}
 
 
         
