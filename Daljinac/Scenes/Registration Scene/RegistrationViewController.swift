@@ -77,7 +77,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func sendRegistrationData(_ sender: Any) {
         
         do {
-            try? registration()
+            try registration()
         } catch RegistrationError.emptyFirstName {
             Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyName, vc: self)
         } catch RegistrationError.emptyLastName {
@@ -99,9 +99,10 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
             Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidPassword, vc: self)
         } catch RegistrationError.invalidConfirmPassword {
             Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidConfirmPassword, vc: self)
+        } catch {
+            Alert.showBasic(title: "Greska u logovanju", message: ValidationError.ErrorMessages.msgInvalidConfirmPassword, vc: self)
         }
-        
-    }
+     }
     
     // MARK: - Terms and information button func
     
@@ -157,27 +158,63 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         print("Početna strana")
     }
     
-       func registration() throws {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         
-        registrationForm.firstName = registrationView.firstNameTextFild.text
-        registrationForm.lastName = registrationView.lastNameTxtFild.text
-        registrationForm.phoneNumber = registrationView.phoneNumberTxtFild.text
-        registrationForm.password = registrationView.passwordTxtFild.text
-        registrationForm.confirmPassword = registrationView.rePasswordTxtFild.text
+        if textField == registrationView.firstNameTextFild {
+            self.registrationForm.firstName = textField.text
+        }
+        if textField == registrationView.lastNameTxtFild {
+            self.registrationForm.lastName = textField.text
+        }
+        if textField == registrationView.phoneNumberTxtFild {
+            self.registrationForm.phoneNumber = textField.text
+        }
+        if textField == registrationView.passwordTxtFild {
+            self.registrationForm.password = textField.text
+        }
+        if textField == registrationView.rePasswordTxtFild {
+            self.registrationForm.confirmPassword = textField.text
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+        switch(textField.tag){
+        case 1:
+           self.registrationForm.firstName = textField.text
+        case 2:
+          self.registrationForm.lastName = textField.text
+        case 3:
+           self.registrationForm.phoneNumber = textField.text
+        case 4:
+          self.registrationForm.password = textField.text
+         case 5:
+          self.registrationForm.confirmPassword = textField.text
+        default:
+            print("any other")
+        }
+
+        textField.resignFirstResponder()
+
+        return true
+    }
+    
+    
+       func registration() throws {
       
-        if (registrationForm.firstName?.isEmpty)! {
+        if !(registrationForm.firstName?.isEmpty)! {
             throw RegistrationError.emptyFirstName
         }
-        if (registrationForm.lastName?.isEmpty)! {
+        if !(registrationForm.lastName?.isEmpty)! {
             throw RegistrationError.emptyLastName
         }
-        if (registrationForm.phoneNumber?.isEmpty)! {
+        if !(registrationForm.phoneNumber?.isEmpty)! {
             throw RegistrationError.emptyPhoneNumber
         }
-        if (registrationForm.password?.isEmpty)! {
+        if !(registrationForm.password?.isEmpty)! {
             throw RegistrationError.emptyPassword
         }
-        if (registrationForm.confirmPassword?.isEmpty)! {
+        if !(registrationForm.confirmPassword?.isEmpty)! {
             throw RegistrationError.emptyConfirmPassword
         }
         if registrationForm.confimTerms != registrationView.termsButton.isSelected {
@@ -198,11 +235,10 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         if !(registrationForm.confirmPassword?.isValidConfirmPassword)! {
             throw RegistrationError.invalidConfirmPassword
         }
-      
+     
         
 }
-       
-   
+  
 }
 
 

@@ -43,7 +43,7 @@ import Foundation
         static let msgEmptyMobilNo = "Unesite broj mobilnog telefona"
         static let msgInvalidMobilNo = "Neispravan broj mobilnog telefona"
         static let msgEmptuActivationCode = "Unesite aktivacioni kod"
-        static let msdInvalidActivationCode = "Neispravan aktivacioni kod"
+        static let msdInvalidRegistration = "Došlo je do greške prilikom logovanja"
         
     }
     
