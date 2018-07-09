@@ -132,11 +132,12 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
         print("Početna strana")
     }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
+
+    func textFieldDidEndEditing(_ textField: UITextField)  {
+
         if textField == registrationView.firstNameTextFild {
             self.registrationForm.firstName = textField.text
+            print(registrationForm.firstName ?? "prazan")
         }
         if textField == registrationView.lastNameTxtFild {
             self.registrationForm.lastName = textField.text
@@ -150,29 +151,30 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         if textField == registrationView.rePasswordTxtFild {
             self.registrationForm.confirmPassword = textField.text
         }
+
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-
-        switch(textField.tag){
-        case 1:
-           self.registrationForm.firstName = textField.text
-        case 2:
-          self.registrationForm.lastName = textField.text
-        case 3:
-           self.registrationForm.phoneNumber = textField.text
-        case 4:
-          self.registrationForm.password = textField.text
-         case 5:
-          self.registrationForm.confirmPassword = textField.text
-        default:
-            print("any other")
-        }
-
-        textField.resignFirstResponder()
-
-        return true
-    }
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//
+//        switch(textField.tag){
+//        case 1:
+//           self.registrationForm.firstName = registrationView.firstNameTextFild.text
+//        case 2:
+//          self.registrationForm.lastName = registrationView.lastNameTxtFild.text
+//        case 3:
+//           self.registrationForm.phoneNumber = registrationView.phoneNumberTxtFild.text
+//        case 4:
+//          self.registrationForm.password = registrationView.passwordTxtFild.text
+//         case 5:
+//          self.registrationForm.confirmPassword = registrationView.rePasswordTxtFild.text
+//        default:
+//            print("any other")
+//        }
+//
+//        textField.resignFirstResponder()
+//
+//        return true
+//    }
     
        // MARK: - DATA VALIDATION
     
