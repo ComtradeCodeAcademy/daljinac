@@ -10,40 +10,37 @@ import Foundation
 
   struct ValidationError {
     var errorString: String!
-    var errorCode: Int!
+    var errorTitle: String!
     
-    init(code: Int, message: String) {
+    init(code: String, message: String) {
         errorString = message
-        errorCode = code
+        errorTitle = code
     }
-    struct ErrorCodes {
+    struct ErrorTitle {
         static let errorTitleEmptyText = "Nepoptpuna forma"
-        static let errorTitleInvalidPassword = 3006
-        static let errorTitleInvalidRepassword = 3005
-        static let errorTitleInvalidMobilNo = 3008
-        static let errorTitleInvalidName = 3010
-        static let errorTitleInvalidLastName = 3004
-        static let errorTitleInvalidActivacionCode = 3001
-        static let errorTitleInvalidEmail = 3002
+        static let errorTitleInvalidPassword = "Neispravno uneta lozinka"
+        static let errorTitleInvalidRepassword = "Potvrda lozinke neispravna"
+        static let errorTitleInvalidMobilNo = "Neispravan broj telefona"
+        static let errorTitleInvalidName = "Neispravno uneto ime"
+        static let errorTitleInvalidLastName = "Neispravno uneto prezime"
     }
     
     struct ErrorMessages {
         
         static let msgEmptyName = "Unesite vaše ime"
-        static let msgInvalidName = "Neispravno uneto ime"
+        static let msgInvalidName = "Ime treba da sadrži samo slova"
         static let msgEmptyLastName = "Unesite Vase prezime"
-        static let msgInvalidLastName = "Neispravno uneto prezime"
+        static let msgInvalidLastName = "Prezime treba da sadrži samo slova"
         static let msgEmptyPassword = "Unesite lozinku"
         static let msgEmptyConfirmPassword = "Unesite potvrdu lozinke"
         static let msgInvalidPassword = "Lozinka mora da sadrzi 8 karaktera"
-        static let msgInvalidRepassword = "Lozinka se ne poklapa"
+        static let msgInvalidRepassword = "Lozinka se ne poklapa, molimo Vas pokušajte ponovo"
         static let msgInvalidConfirmPassword = "Lozinka se ne poklapa"
         static let msgEmptyEmail = "Unesite Vasu email adresu"
         static let msgInvalidEmail = "Neispravna email adresa"
         static let msgEmptyMobilNo = "Unesite broj mobilnog telefona"
-        static let msgInvalidMobilNo = "Neispravan broj mobilnog telefona"
-        static let msgEmptuActivationCode = "Unesite aktivacioni kod"
-        static let msdInvalidRegistration = "Došlo je do greške prilikom logovanja"
+        static let msgInvalidMobilNo = "Potrebno je uneti pozivni br zemlje i ispavan br mobilnog, molim Vas pokušajte ponovo "
+        static let msdInvalidRegistration = "Došlo je do greške prilikom registracije"
         
     }
     

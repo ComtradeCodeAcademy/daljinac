@@ -202,19 +202,19 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
        func registration() throws {
       
-        if !(registrationForm.firstName?.isEmpty)! {
+        if (registrationForm.firstName?.isEmpty)! {
             throw RegistrationError.emptyFirstName
         }
-        if !(registrationForm.lastName?.isEmpty)! {
+        if (registrationForm.lastName?.isEmpty)! {
             throw RegistrationError.emptyLastName
         }
-        if !(registrationForm.phoneNumber?.isEmpty)! {
+        if (registrationForm.phoneNumber?.isEmpty)! {
             throw RegistrationError.emptyPhoneNumber
         }
-        if !(registrationForm.password?.isEmpty)! {
+        if (registrationForm.password?.isEmpty)! {
             throw RegistrationError.emptyPassword
         }
-        if !(registrationForm.confirmPassword?.isEmpty)! {
+        if (registrationForm.confirmPassword?.isEmpty)! {
             throw RegistrationError.emptyConfirmPassword
         }
         if registrationForm.confimTerms != registrationView.termsButton.isSelected {
