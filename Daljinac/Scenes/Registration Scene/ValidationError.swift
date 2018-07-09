@@ -19,10 +19,12 @@ import Foundation
     struct ErrorTitle {
         static let errorTitleEmptyText = "Nepoptpuna forma"
         static let errorTitleInvalidPassword = "Neispravno uneta lozinka"
-        static let errorTitleInvalidRepassword = "Potvrda lozinke neispravna"
+        static let errorTitleInvalidConfirmPassword = "Potvrda lozinke neispravna"
         static let errorTitleInvalidMobilNo = "Neispravan broj telefona"
         static let errorTitleInvalidName = "Neispravno uneto ime"
         static let errorTitleInvalidLastName = "Neispravno uneto prezime"
+        static let errorTitleInvalidRegistration = "Greška prilikom konekcije"
+         static let errorTitleInvalidTerms = "Uslovi korišćenja"
     }
     
     struct ErrorMessages {
@@ -40,8 +42,8 @@ import Foundation
         static let msgInvalidEmail = "Neispravna email adresa"
         static let msgEmptyMobilNo = "Unesite broj mobilnog telefona"
         static let msgInvalidMobilNo = "Potrebno je uneti pozivni br zemlje i ispavan br mobilnog, molim Vas pokušajte ponovo "
-        static let msdInvalidRegistration = "Došlo je do greške prilikom registracije"
-        
+        static let msgInvalidRegistration = "Došlo je do greške prilikom registracije, molimo Vas pokušajte kasnije"
+        static let msgerrorTitleInvalidTerms = "Molimo Vas da pažljivo pročitate uslove korišćenja i obavezno popunite polje"
     }
     
     

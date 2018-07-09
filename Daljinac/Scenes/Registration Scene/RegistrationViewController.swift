@@ -16,7 +16,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet var registrationView: RegistrationView!
-    var registrationForm = FormValidationModel(userName: "Darko", userLastName: "Batur", userPassword: "22222", userRepassword: "22222", mobile: "0642315939", terms: true)
+    var registrationForm = FormValidationModel(userName: "", userLastName: "", userPassword: "", userRepassword: "", mobile: "", terms: false)
  
     
     override func viewDidLoad() {
@@ -31,33 +31,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-     // MARK: - DATA VALIDATION
-    
-//    func isValidEmail() -> Bool {
-//        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-//
-//        let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
-//        return emailTest.evaluate(with: self)
-    
-//    }
-    
-//    func validateInputData () throws {
-//
-//        // check username
-//        let phoneValdationError = ValidationMenager.validateForm(signUpModel: self.registrat)
-//        if nil != phoneValdationError {
-//            throw phoneValdationError
-//        }
-////                if self.registrationForm.phoneNumber
-////                guard let item = inventory[name]
-////                    else {
-////                    throw VendingMachineError.invalidSelection
-////                }
-//        return true
-//    }
-    
-    
-    
+  
     
      // MARK: - KEYBOARD Notification
     
@@ -79,28 +53,28 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         do {
             try registration()
         } catch RegistrationError.emptyFirstName {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyName, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleEmptyText, message: ValidationError.ErrorMessages.msgEmptyName, vc: self)
         } catch RegistrationError.emptyLastName {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyLastName, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleEmptyText, message: ValidationError.ErrorMessages.msgEmptyLastName, vc: self)
         } catch RegistrationError.emptyPhoneNumber {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyMobilNo, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleEmptyText, message: ValidationError.ErrorMessages.msgEmptyMobilNo, vc: self)
         } catch RegistrationError.emptyPassword {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyPassword, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleEmptyText, message: ValidationError.ErrorMessages.msgEmptyPassword, vc: self)
         } catch RegistrationError.emptyConfirmPassword {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgEmptyConfirmPassword, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleEmptyText, message: ValidationError.ErrorMessages.msgEmptyConfirmPassword, vc: self)
         }
         catch RegistrationError.invalidFirstName {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidName, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleInvalidName, message: ValidationError.ErrorMessages.msgInvalidName, vc: self)
         } catch RegistrationError.invalidLastName {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidLastName, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleInvalidLastName, message: ValidationError.ErrorMessages.msgInvalidLastName, vc: self)
         } catch RegistrationError.invalidPhone {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidMobilNo, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleInvalidMobilNo, message: ValidationError.ErrorMessages.msgInvalidMobilNo, vc: self)
         } catch RegistrationError.invalidPassword {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidPassword, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleInvalidPassword, message: ValidationError.ErrorMessages.msgInvalidPassword, vc: self)
         } catch RegistrationError.invalidConfirmPassword {
-            Alert.showBasic(title: "", message: ValidationError.ErrorMessages.msgInvalidConfirmPassword, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleInvalidConfirmPassword, message: ValidationError.ErrorMessages.msgInvalidConfirmPassword, vc: self)
         } catch {
-            Alert.showBasic(title: "Greska u logovanju", message: ValidationError.ErrorMessages.msgInvalidConfirmPassword, vc: self)
+            Alert.showBasic(title: ValidationError.ErrorTitle.errorTitleInvalidRegistration, message: ValidationError.ErrorMessages.msgInvalidRegistration, vc: self)
         }
      }
     
@@ -118,6 +92,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
 //                sender.transform = .identity
 //            }, completion: nil)
 //        }
+       
         // default chckbox
         
         if sender.isSelected {
@@ -199,9 +174,10 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+       // MARK: - DATA VALIDATION
     
        func registration() throws {
-      
+     // Chack is txtFild isEmpty
         if (registrationForm.firstName?.isEmpty)! {
             throw RegistrationError.emptyFirstName
         }
@@ -217,9 +193,9 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         if (registrationForm.confirmPassword?.isEmpty)! {
             throw RegistrationError.emptyConfirmPassword
         }
-        if registrationForm.confimTerms != registrationView.termsButton.isSelected {
-            throw RegistrationError.termsUnCheck
-        }
+       
+        // Chack is textFild isValid with regex String Extension
+        
         if !(registrationForm.firstName?.isValidName)! {
             throw RegistrationError.invalidFirstName
         }
@@ -234,6 +210,11 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         }
         if !(registrationForm.confirmPassword?.isValidConfirmPassword)! {
             throw RegistrationError.invalidConfirmPassword
+        }
+        // Chack is it Terms btn are selected
+        
+        if registrationForm.confimTerms != registrationView.termsButton.isSelected {
+            throw RegistrationError.termsUnCheck
         }
      
         
